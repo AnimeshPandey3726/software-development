@@ -1,4 +1,4 @@
 {
   "success": false,
-  "error": "An error occurred (ResourceNotFoundException) when calling the InvokeAgentRuntime operation: No endpoint or agent found with qualifier 'DEFAULT' for agent 'arn:aws:bedrock-agentcore:us-east-1:652816804149:harness/harness_9ghtr-Ditg6t3EBl'"
+  "error": "An error occurred (ValidationException) when calling the InvokeAgentRuntime operation: The agent runtime arn:aws:bedrock-agentcore:us-east-1:652816804149:runtime/harness_harness_9ghtr-P1xpVr8ey8 is managed by a harness and cannot be invoked directly. Use the InvokeHarness API with the relevant harness ID instead."
 }
