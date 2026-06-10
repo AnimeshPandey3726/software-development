@@ -1,4 +1,4 @@
 {
   "success": false,
-  "error": "An error occurred (AccessDeniedException) when calling the InvokeAgentRuntime operation: User: arn:aws:sts::652816804149:assumed-role/sd-lifecycle-orchestrator-role-tt2rrsv6/sd-lifecycle-orchestrator is not authorized to perform: bedrock-agentcore:InvokeAgentRuntime on resource: arn:aws:bedrock-agentcore:us-east-1:652816804149:harness/harness_8wtfm-Vyzw0t8FbF because no identity-based policy allows the bedrock-agentcore:InvokeAgentRuntime action"
+  "error": "An error occurred (ResourceNotFoundException) when calling the InvokeAgentRuntime operation: No endpoint or agent found with qualifier 'DEFAULT' for agent 'arn:aws:bedrock-agentcore:us-east-1:652816804149:harness/harness_8wtfm-Vyzw0t8FbF'"
 }
