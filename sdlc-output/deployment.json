@@ -2,14 +2,14 @@
   "success": true,
   "stage": "deploy",
   "format": "json",
-  "runtimeSessionId": "2fe9f1cf-e809-4468-a7c9-83b6c009f007",
-  "requestId": "5314c3a0-2643-4541-b3e8-717057ef26d9",
+  "runtimeSessionId": "aa10c99e-7c3a-4875-92f6-7ad01018f23d",
+  "requestId": "47ade0ab-e544-4c54-9f96-1dae41fe418a",
   "event_count": 12,
   "stop_reason": "end_turn",
   "usage": {
-    "inputTokens": 1027,
+    "inputTokens": 1021,
     "outputTokens": 8,
-    "totalTokens": 1035
+    "totalTokens": 1029
   },
   "final_text": "{\"error\":\"invalid_request\"}"
 }
