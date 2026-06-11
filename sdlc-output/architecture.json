@@ -2,14 +2,14 @@
   "success": true,
   "stage": "architect-json",
   "format": "json",
-  "runtimeSessionId": "9f4a32ae-9ec7-49ec-b92e-1523c343037d",
-  "requestId": "a5aee71f-348e-4cc6-9bf9-e70cadd2cde8",
-  "event_count": 569,
+  "runtimeSessionId": "d093d98e-3799-4e17-95c5-664478dae546",
+  "requestId": "9f64f549-066f-4956-90c2-2d32ed61e7fa",
+  "event_count": 577,
   "stop_reason": "end_turn",
   "usage": {
-    "inputTokens": 2531,
-    "outputTokens": 479,
-    "totalTokens": 3010
+    "inputTokens": 5634,
+    "outputTokens": 404,
+    "totalTokens": 6038
   },
-  "final_text": "{\n  \"project_name\": \"Cricket Worldcup Management System\",\n  \"business_summary\": \"The Cricket Worldcup Management System is designed to manage and organize the cricket worldcup events, including player registrations, match scheduling, and results management.\",\n  \"actors\": [\n    \"Administrators\",\n    \"Players\",\n    \"Coaches\",\n    \"Spectators\"\n  ],\n  \"functional_requirements\": [\n    \"User registration and authentication\",\n    \"Match scheduling and management\",\n    \"Player statistics tracking\",\n    \"Live score updates\",\n    \"Notifications and alerts\"\n  ],\n  \"non_functional_requirements\": [\n    \"High availability\",\n    \"Scalability\",\n    \"Security\",\n    \"Performance\"\n  ],\n  \"technology_stack\": {\n    \"frontend\": \"React\",\n    \"backend\": \"Node.js\",\n    \"database\": \"MongoDB\",\n    \"authentication\": \"JWT\"\n  },\n  \"architecture_pattern\": \"Microservices architecture\",\n  \"modules\": [\n    \"User Management\",\n    \"Match Management\",\n    \"Statistics\",\n    \"Notifications\"\n  ],\n  \"entities\": [\n    \"User\",\n    \"Match\",\n    \"Team\",\n    \"Player\"\n  ],\n  \"apis\": [\n    \"User API\",\n    \"Match API\",\n    \"Statistics API\",\n    \"Notification API\"\n  ],\n  \"integrations\": [\n    \"Email service\",\n    \"SMS service\",\n    \"Third-party statistics API\"\n  ],\n  \"security\": {\n    \"https\": true,\n    \"jwt_for_authentication\": true,\n    \"data_encryption\": true\n  },\n  \"developer_handoff\": [\n    \"Detailed API documentation and codebase available on GitHub.\"\n  ],\n  \"qa_handoff\": [\n    \"Test cases and environment setup instructions provided.\"\n  ],\n  \"deployment_handoff\": [\n    \"CI/CD pipeline configured with automated deployment to cloud services.\"\n  ]\n}"
+  "final_text": "{\n  \"project_name\": \"Cricket Worldcup Management System\",\n  \"business_summary\": \"The Cricket Worldcup Management System is designed to manage and organize the cricket worldcup events, including team management, match scheduling, and results tracking.\",\n  \"actors\": [\n    \"Admin\",\n    \"Team Manager\",\n    \"Player\",\n    \"Fan\"\n  ],\n  \"functional_requirements\": [\n    \"User authentication and authorization\",\n    \"Team and player management\",\n    \"Match scheduling and results tracking\",\n    \"Fan engagement features (e.g., live scores, news)\"\n  ],\n  \"non_functional_requirements\": [\n    \"High availability and scalability\",\n    \"Secure data storage and transmission\",\n    \"Responsive and intuitive user interface\"\n  ],\n  \"technology_stack\": {\n    \"frontend\": \"React\",\n    \"backend\": \"Node.js\",\n    \"database\": \"MongoDB\",\n    \"authentication\": \"JWT\"\n  },\n  \"architecture_pattern\": \"Microservices architecture\",\n  \"modules\": [\n    \"User Management\",\n    \"Team Management\",\n    \"Match Scheduling\",\n    \"Results Tracking\"\n  ],\n  \"entities\": [\n    \"User\",\n    \"Team\",\n    \"Player\",\n    \"Match\"\n  ],\n  \"apis\": [\n    \"User API\",\n    \"Team API\",\n    \"Match API\"\n  ],\n  \"integrations\": [\n    \"Payment gateway integration\",\n    \"Third-party analytics integration\"\n  ],\n  \"security\": {\n    \"encryption\": \"Encryption for sensitive data\",\n    \"audits\": \"Regular security audits\",\n    \"access_control\": \"Access control and permissions\"\n  },\n  \"developer_handoff\": [\n    \"Detailed API documentation and codebase\"\n  ],\n  \"qa_handoff\": [\n    \"Test cases and environment setup instructions\"\n  ],\n  \"deployment_handoff\": [\n    \"CI/CD pipeline and deployment scripts\"\n  ]\n}"
 }
