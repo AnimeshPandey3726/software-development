@@ -2,14 +2,14 @@
   "success": true,
   "stage": "architect-json",
   "format": "json",
-  "runtimeSessionId": "7cc0c0a3-5cc1-4932-b2bb-df8b3aa07342",
-  "requestId": "486cf6e5-03ac-450b-a210-5c14180ba41b",
-  "event_count": 515,
+  "runtimeSessionId": "0ffca4b0-a1f0-4b8a-9a30-db7319b5754c",
+  "requestId": "6920c261-cc4e-4720-bddb-84d93485daa5",
+  "event_count": 416,
   "stop_reason": "end_turn",
   "usage": {
-    "inputTokens": 1968,
-    "outputTokens": 442,
-    "totalTokens": 2410
+    "inputTokens": 5631,
+    "outputTokens": 333,
+    "totalTokens": 5964
   },
-  "final_text": "{\n  \"project_name\": \"Hospitable Management System\",\n  \"business_summary\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\n  \"actors\": [\"User\", \"Administrator\", \"Guest\"],\n  \"functional_requirements\": [\n    \"User registration and authentication\",\n    \"Room booking and management\",\n    \"Guest check-in and check-out\",\n    \"Payment processing\"\n  ],\n  \"non_functional_requirements\": [\n    \"High availability\",\n    \"Scalability\",\n    \"Security\"\n  ],\n  \"technology_stack\": {\n    \"backend\": \"Node.js\",\n    \"frontend\": \"React\",\n    \"database\": \"PostgreSQL\",\n    \"containerization\": \"Docker\"\n  },\n  \"architecture_pattern\": \"Microservices\",\n  \"modules\": [\n    \"User Management\",\n    \"Booking System\",\n    \"Payment Gateway\"\n  ],\n  \"entities\": [\n    \"User\",\n    \"Room\",\n    \"Booking\",\n    \"Payment\"\n  ],\n  \"apis\": [\n    \"RESTful APIs\"\n  ],\n  \"integrations\": [\n    \"Payment Gateway\",\n    \"Email Service\"\n  ],\n  \"security\": {\n    \"authentication\": \"OAuth2\",\n    \"encryption\": \"HTTPS, Encryption\"\n  },\n  \"developer_handoff\": [\n    \"Complete codebase\",\n    \"documentation\"\n  ],\n  \"qa_handoff\": [\n    \"Test cases\",\n    \"staging environment\"\n  ],\n  \"deployment_handoff\": [\n    \"Docker containers\",\n    \"CI/CD pipeline\"\n  ]\n}"
+  "final_text": "{\n  \"project_name\": \"Cricket Worldcup Management System\",\n  \"business_summary\": \"Manage and organize the Cricket Worldcup events, teams, players, and matches.\",\n  \"actors\": [\"Admin\", \"Team Manager\", \"Player\", \"Fan\"],\n  \"functional_requirements\": [\n    \"User authentication and authorization\",\n    \"Event management\",\n    \"Team and player management\",\n    \"Match scheduling and results\",\n    \"Fan engagement and notifications\"\n  ],\n  \"non_functional_requirements\": [\n    \"High availability\",\n    \"Scalability\",\n    \"Security\",\n    \"Performance\"\n  ],\n  \"technology_stack\": {\n    \"frontend\": \"React\",\n    \"backend\": \"Node.js\",\n    \"database\": \"MongoDB\",\n    \"cloud\": \"AWS\"\n  },\n  \"architecture_pattern\": \"Microservices\",\n  \"modules\": [\n    \"Authentication\",\n    \"Event Management\",\n    \"Team Management\",\n    \"Match Management\",\n    \"Notification\"\n  ],\n  \"entities\": [\"User\", \"Event\", \"Team\", \"Player\", \"Match\"],\n  \"apis\": [\"RESTful APIs for all modules\"],\n  \"integrations\": [\"Third-party services for payments and notifications\"],\n  \"security\": {\n    \"authentication\": \"OAuth\",\n    \"data_transmission\": \"HTTPS\",\n    \"sensitive_data\": \"encryption\"\n  },\n  \"developer_handoff\": [\"API documentation and code repository\"],\n  \"qa_handoff\": [\"Test cases and environment setup\"],\n  \"deployment_handoff\": [\"CI/CD pipeline and deployment scripts\"]\n}"
 }
