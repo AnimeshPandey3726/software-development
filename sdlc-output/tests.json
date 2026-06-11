@@ -1,8 +1,15 @@
 {
   "success": true,
   "stage": "qa",
-  "runtimeSessionId": "004781d7-4a15-4ce8-8b70-cd68988b66f7",
-  "requestId": "4650baa7-675d-4dd9-b142-d463e403f26f",
-  "event_count": 16,
-  "final_text": "{\n\"\nerror\n\":\n\"\ninvalid\n_\nrequest\n\"\n}"
+  "format": "json",
+  "runtimeSessionId": "095faf8d-d3e1-4bcf-847c-199749503f49",
+  "requestId": "66648c40-5a4e-4da9-9655-84ee1f6359c3",
+  "event_count": 42,
+  "stop_reason": "end_turn",
+  "usage": {
+    "inputTokens": 963,
+    "outputTokens": 39,
+    "totalTokens": 1002
+  },
+  "final_text": "{\n  \"error\": \"invalid_request\"\n}"
 }
