@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Management System Architecture</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        h1, h2, h3 { color: #333; }
+        p { margin-bottom: 1em; }
+       .diagram { text-align: center; margin: 2em 0; }
+       .diagram svg { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <h1>Loan Management System</h1>
+    <h2>Business Summary</h2>
+    <p>The Loan Management System is designed to streamline the loan application, approval, and disbursement process for financial institutions.</p>
+    <h2>Actors</h2>
+    <ul>
+        <li>Customers</li>
+        <li>Loan Officers</li>
+        <li>Underwriters</li>
+        <li>Accountants</li>
+    </ul>
+    <h2>Functional Requirements</h2>
+    <ul>
+        <li>Customer loan application submission</li>
+        <li>Loan officer review and approval</li>
+        <li>Underwriter risk assessment</li>
+        <li>Disbursement of approved loans</li>
+        <li>Repayment tracking and management</li>
+    </ul>
+    <h2>Non-Functional Requirements</h2>
+    <ul>
+        <li>High availability</li>
+        <li>Scalability</li>
+        <li>Security</li>
+        <li>Performance</li>
+    </ul>
+    <h2>Technology Stack</h2>
+    <ul>
+        <li>Frontend: React</li>
+        <li>Backend: Node.js</li>
+        <li>Database: PostgreSQL</li>
+        <li>Cloud: AWS</li>
+    </ul>
+    <h2>Architecture Pattern</h2>
+    <p>Microservices architecture</p>
+    <h2>Modules</h2>
+    <ul>
+        <li>Customer Management</li>
+        <li>Loan Application</li>
+        <li>Review and Approval</li>
+        <li>Disbursement</li>
+        <li>Repayment</li>
+    </ul>
+    <h2>Entities</h2>
+    <ul>
+        <li>Customer</li>
+        <li>Loan</li>
+        <li>Application</li>
+        <li>Disbursement</li>
+        <li>Repayment</li>
+    </ul>
+    <h2>APIs</h2>
+    <ul>
+        <li>Customer API</li>
+        <li>Loan API</li>
+        <li>Application API</li>
+        <li>Disbursement API</li>
+        <li>Repayment API</li>
+    </ul>
+    <h2>Integrations</h2>
+    <ul>
+        <li>Credit Bureau</li>
+        <li>Payment Gateway</li>
+        <li>Email Service</li>
+    </ul>
+    <h2>Security Summary</h2>
+    <ul>
+        <li>OAuth 2.0 for authentication</li>
+        <li>Encryption for sensitive data</li>
+        <li>Regular security audits</li>
+    </ul>
+    <h2>Developer Handoff</h2>
+    <p>Detailed API documentation and code examples</p>
+    <h2>QA Handoff</h2>
+    <p>Comprehensive test cases and automated testing suite</p>
+    <h2>Deployment Handoff</h2>
+    <p>CI/CD pipeline setup and deployment scripts</p>
+    <div class="diagram">
+        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="50" x="50" y="50" fill="#f0f0f0"/>
+            <rect width="100" height="50" x="250" y="50" fill="#f0f0f0"/>
+            <rect width="100" height="50" x="450" y="50" fill="#f0f0f0"/>
+            <text x="100" y="80" font-family="Arial" font-size="12" text-anchor="middle">Customer Management</text>
+            <text x="300" y="80" font-family="Arial" font-size="12" text-anchor="middle">Loan Application</text>
+            <text x="500" y="80" font-family="Arial" font-size="12" text-anchor="middle">Review and Approval</text>
+            <line x1="150" y1="75" x2="200" y2="75" stroke="black"/>
+            <line x1="350" y1="75" x2="400" y2="75" stroke="black"/>
+            <rect width="100" height="50" x="50" y="200" fill="#f0f0f0"/>
+            <rect width="100" height="50" x="250" y="200" fill="#f0f0f0"/>
+            <rect width="100" height="50" x="450" y="200" fill="#f0f0f0"/>
+            <text x="100" y="230" font-family="Arial" font-size="12" text-anchor="middle">Disbursement</text>
+            <text x="300" y="230" font-family="Arial" font-size="12" text-anchor="middle">Repayment</text>
+            <line x1="150" y1="225" x2="200" y2="225" stroke="black"/>
+        </svg>
+    </div>
+</body>
+</html>
