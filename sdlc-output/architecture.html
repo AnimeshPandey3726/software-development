@@ -3,54 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospitable Management System</title>
+    <title>Cricket Worldcup Management System</title>
     <style>
         body { font-family: Arial, sans-serif; }
-        h1, h2 { color: #333; }
-        p { line-height: 1.6; }
-      .diagram { display: block; margin: 20px auto; }
+        h1, h2, h3 { color: #333; }
+      .section { margin-bottom: 20px; }
+      .diagram { text-align: center; }
     </style>
 </head>
 <body>
-    <h1>Hospitable Management System</h1>
-    <h2>Business Summary</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <h2>Actors</h2>
-    <p>User, Administrator, Guest</p>
-    <h2>Functional Requirements</h2>
-    <p>1. User registration and authentication<br>2. Room booking and management<br>3. Guest check-in and check-out<br>4. Payment processing</p>
-    <h2>Non-Functional Requirements</h2>
-    <p>1. High availability<br>2. Scalability<br>3. Security</p>
-    <h2>Technology Stack</h2>
-    <p>Node.js, React, PostgreSQL, Docker</p>
-    <h2>Architecture Pattern</h2>
-    <p>Microservices</p>
-    <h2>Modules</h2>
-    <p>User Management, Booking System, Payment Gateway</p>
-    <h2>Entities</h2>
-    <p>User, Room, Booking, Payment</p>
-    <h2>APIs</h2>
-    <p>RESTful APIs</p>
-    <h2>Integrations</h2>
-    <p>Payment Gateway, Email Service</p>
-    <h2>Security Summary</h2>
-    <p>OAuth2, HTTPS, Encryption</p>
-    <h2>Developer Handoff</h2>
-    <p>Complete codebase, documentation</p>
-    <h2>QA Handoff</h2>
-    <p>Test cases, staging environment</p>
-    <h2>Deployment Handoff</h2>
-    <p>Docker containers, CI/CD pipeline</p>
+    <h1>Cricket Worldcup Management System</h1>
+    <div class="section">
+        <h2>Business Summary</h2>
+        <p>Manage and organize the Cricket Worldcup events, teams, players, and matches.</p>
+    </div>
+    <div class="section">
+        <h2>Actors</h2>
+        <p>Admin, Team Manager, Player, Fan</p>
+    </div>
+    <div class="section">
+        <h2>Functional Requirements</h2>
+        <ul>
+            <li>User authentication and authorization</li>
+            <li>Event management</li>
+            <li>Team and player management</li>
+            <li>Match scheduling and results</li>
+            <li>Fan engagement and notifications</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Non-Functional Requirements</h2>
+        <ul>
+            <li>High availability</li>
+            <li>Scalability</li>
+            <li>Security</li>
+            <li>Performance</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Technology Stack</h2>
+        <p>Frontend: React, Backend: Node.js, Database: MongoDB, Cloud: AWS</p>
+    </div>
+    <div class="section">
+        <h2>Architecture Pattern</h2>
+        <p>Microservices</p>
+    </div>
+    <div class="section">
+        <h2>Modules</h2>
+        <ul>
+            <li>Authentication</li>
+            <li>Event Management</li>
+            <li>Team Management</li>
+            <li>Match Management</li>
+            <li>Notification</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>Entities</h2>
+        <ul>
+            <li>User</li>
+            <li>Event</li>
+            <li>Team</li>
+            <li>Player</li>
+            <li>Match</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>APIs</h2>
+        <p>RESTful APIs for all modules</p>
+    </div>
+    <div class="section">
+        <h2>Integrations</h2>
+        <p>Third-party services for payments and notifications</p>
+    </div>
+    <div class="section">
+        <h2>Security Summary</h2>
+        <p>OAuth for authentication, HTTPS for data transmission, encryption for sensitive data</p>
+    </div>
+    <div class="section">
+        <h2>Developer Handoff</h2>
+        <p>API documentation and code repository</p>
+    </div>
+    <div class="section">
+        <h2>QA Handoff</h2>
+        <p>Test cases and environment setup</p>
+    </div>
+    <div class="section">
+        <h2>Deployment Handoff</h2>
+        <p>CI/CD pipeline and deployment scripts</p>
+    </div>
     <div class="diagram">
-        <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="10" width="100" height="50" style="fill:blue"/>
-            <rect x="130" y="10" width="100" height="50" style="fill:green"/>
-            <rect x="250" y="10" width="100" height="50" style="fill:red"/>
-            <line x1="120" y1="35" x2="130" y2="35" style="stroke:black;stroke-width:2"/>
-            <line x1="240" y1="35" x2="250" y2="35" style="stroke:black;stroke-width:2"/>
-            <text x="20" y="40" fill="white" font-size="12">User</text>
-            <text x="150" y="40" fill="white" font-size="12">Booking</text>
-            <text x="280" y="40" fill="white" font-size="12">Payment</text>
+        <h2>Architecture Diagram</h2>
+        <svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="100" height="50" fill="lightblue" />
+            <text x="15" y="40" fill="black">User</text>
+            <rect x="130" y="10" width="100" height="50" fill="lightgreen" />
+            <text x="135" y="40" fill="black">Authentication</text>
+            <rect x="250" y="10" width="100" height="50" fill="lightcoral" />
+            <text x="255" y="40" fill="black">Event Management</text>
+            <rect x="370" y="10" width="100" height="50" fill="lightgoldenrodyellow" />
+            <text x="375" y="40" fill="black">Team Management</text>
+            <rect x="10" y="80" width="100" height="50" fill="lightpink" />
+            <text x="15" y="110" fill="black">Match Management</text>
+            <rect x="130" y="80" width="100" height="50" fill="lightsteelblue" />
+            <text x="135" y="110" fill="black">Notification</text>
+            <line x1="110" y1="35" x2="130" y2="35" stroke="black" />
+            <line x1="230" y1="35" x2="250" y2="35" stroke="black" />
+            <line x1="350" y1="35" x2="370" y2="35" stroke="black" />
+            <line x1="110" y1="105" x2="130" y2="105" stroke="black" />
         </svg>
     </div>
 </body>
