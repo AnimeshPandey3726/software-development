@@ -2,14 +2,14 @@
   "success": true,
   "stage": "developer",
   "format": "json",
-  "runtimeSessionId": "c404d1cb-92c1-4b7d-a112-05bbbbaaaec9",
-  "requestId": "78f18b20-505f-409b-9d9d-1c3fdd02c1d4",
-  "event_count": 61,
+  "runtimeSessionId": "bd54f094-eb5f-4d70-8f92-43dcf1f8afb0",
+  "requestId": "7028a411-594f-4d1e-b137-95f9699eacb8",
+  "event_count": 53,
   "stop_reason": "end_turn",
   "usage": {
-    "inputTokens": 2066,
-    "outputTokens": 58,
-    "totalTokens": 2124
+    "inputTokens": 2465,
+    "outputTokens": 50,
+    "totalTokens": 2515
   },
   "final_text": "{\"error\":\"invalid_request\"}"
 }
