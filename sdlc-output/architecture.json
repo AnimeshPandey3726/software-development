@@ -2,14 +2,14 @@
   "success": true,
   "stage": "architect-json",
   "format": "json",
-  "runtimeSessionId": "dea3e8d5-10b6-4b55-bf5d-4efc7d905f01",
-  "requestId": "f6f3469e-82f5-43ce-8bbb-b2ec7816ee4a",
-  "event_count": 496,
+  "runtimeSessionId": "7cc0c0a3-5cc1-4932-b2bb-df8b3aa07342",
+  "requestId": "486cf6e5-03ac-450b-a210-5c14180ba41b",
+  "event_count": 515,
   "stop_reason": "end_turn",
   "usage": {
-    "inputTokens": 3931,
-    "outputTokens": 392,
-    "totalTokens": 4323
+    "inputTokens": 1968,
+    "outputTokens": 442,
+    "totalTokens": 2410
   },
-  "final_text": "{\n  \"project_name\": \"Loan Management System\",\n  \"business_summary\": \"A system to manage loan applications, approvals, disbursements, and repayments.\",\n  \"actors\": [\n    \"Customers\",\n    \"Loan Officers\",\n    \"Administrators\"\n  ],\n  \"functional_requirements\": [\n    \"Customer registration\",\n    \"Loan application submission\",\n    \"Loan approval workflow\",\n    \"Loan disbursement\",\n    \"Loan repayment processing\"\n  ],\n  \"non_functional_requirements\": [\n    \"High availability\",\n    \"Scalability\",\n    \"Security\",\n    \"Performance\"\n  ],\n  \"technology_stack\": {\n    \"frontend\": \"React\",\n    \"backend\": \"Node.js\",\n    \"database\": \"PostgreSQL\",\n    \"api_gateway\": \"AWS API Gateway\",\n    \"authentication\": \"OAuth 2.0\"\n  },\n  \"architecture_pattern\": \"Microservices\",\n  \"modules\": [\n    \"User Management\",\n    \"Loan Application\",\n    \"Loan Processing\",\n    \"Payment Processing\"\n  ],\n  \"entities\": [\n    \"User\",\n    \"Loan\",\n    \"Payment\"\n  ],\n  \"apis\": [\n    \"User API\",\n    \"Loan API\",\n    \"Payment API\"\n  ],\n  \"integrations\": [\n    \"Third-party credit check service\",\n    \"Payment gateway\"\n  ],\n  \"security\": {\n    \"protocols\": [\n      \"HTTPS\"\n    ],\n    \"authentication\": [\n      \"OAuth 2.0\"\n    ],\n    \"encryption\": [\n      \"Encryption at rest and in transit\"\n    ]\n  },\n  \"developer_handoff\": [\n    \"API documentation and codebase access\"\n  ],\n  \"qa_handoff\": [\n    \"Test cases and environment setup\"\n  ],\n  \"deployment_handoff\": [\n    \"CI/CD pipeline and deployment scripts\"\n  ]\n}"
+  "final_text": "{\n  \"project_name\": \"Hospitable Management System\",\n  \"business_summary\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\n  \"actors\": [\"User\", \"Administrator\", \"Guest\"],\n  \"functional_requirements\": [\n    \"User registration and authentication\",\n    \"Room booking and management\",\n    \"Guest check-in and check-out\",\n    \"Payment processing\"\n  ],\n  \"non_functional_requirements\": [\n    \"High availability\",\n    \"Scalability\",\n    \"Security\"\n  ],\n  \"technology_stack\": {\n    \"backend\": \"Node.js\",\n    \"frontend\": \"React\",\n    \"database\": \"PostgreSQL\",\n    \"containerization\": \"Docker\"\n  },\n  \"architecture_pattern\": \"Microservices\",\n  \"modules\": [\n    \"User Management\",\n    \"Booking System\",\n    \"Payment Gateway\"\n  ],\n  \"entities\": [\n    \"User\",\n    \"Room\",\n    \"Booking\",\n    \"Payment\"\n  ],\n  \"apis\": [\n    \"RESTful APIs\"\n  ],\n  \"integrations\": [\n    \"Payment Gateway\",\n    \"Email Service\"\n  ],\n  \"security\": {\n    \"authentication\": \"OAuth2\",\n    \"encryption\": \"HTTPS, Encryption\"\n  },\n  \"developer_handoff\": [\n    \"Complete codebase\",\n    \"documentation\"\n  ],\n  \"qa_handoff\": [\n    \"Test cases\",\n    \"staging environment\"\n  ],\n  \"deployment_handoff\": [\n    \"Docker containers\",\n    \"CI/CD pipeline\"\n  ]\n}"
 }
