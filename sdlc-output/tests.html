@@ -1,1 +1,69 @@
-<!DOCTYPE html><html><head><title>QA Report for Loan Management System</title><style>body { font-family: Arial, sans-serif; } h1, h2 { color: #333; } ul { list-style-type: disc; margin: 0; padding: 0; } li { margin: 5px 0; }.section { margin-bottom: 20px; }</style></head><body><h1>QA Report for Loan Management System</h1><div class="section"><h2>Test Strategy</h2><p>The test strategy for the Loan Management System will focus on functional, API, security, integration, and regression testing to ensure the system meets the specified requirements and performs optimally.</p></div><div class="section"><h2>Functional Test Scenarios</h2><ul><li>Verify customer registration process.</li><li>Test loan application submission.</li><li>Validate document upload functionality.</li><li>Check loan approval workflow.</li><li>Ensure disbursement process works correctly.</li><li>Verify customer notifications are sent.</li><li>Test reporting and analytics features.</li></ul></div><div class="section"><h2>API Test Scenarios</h2><ul><li>Test Customer API endpoints.</li><li>Validate Loan Application API endpoints.</li><li>Check Document API endpoints.</li><li>Test Workflow API endpoints.</li><li>Verify Disbursement API endpoints.</li><li>Test Notification API endpoints.</li><li>Check Reporting API endpoints.</li></ul></div><div class="section"><h2>Security Test Scenarios</h2><ul><li>Verify OAuth 2.0 authentication implementation.</li><li>Test data encryption at rest and in transit.</li><li>Ensure compliance with GDPR and PCI DSS.</li></ul></div><div class="section"><h2>Integration Test Scenarios</h2><ul><li>Test integration with Credit Bureau.</li><li>Validate integration with KYC Provider.</li><li>Check integration with Payment Gateway.</li></ul></div><div class="section"><h2>Regression Test Scenarios</h2><ul><li>Regression test after each deployment to ensure no new issues are introduced.</li></ul></div><div class="section"><h2>QA Notes</h2><ul><li>Improve documentation and code comments for better maintainability.</li><li>Provide detailed test cases and test environment setup guide for QA.</li><li>Include monitoring and alerting setup details in the deployment handoff.</li></ul></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1, h2 { color: #333; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>QA Report for Loan Management System</h1>
+    <h2>Test Strategy</h2>
+    <p>Comprehensive testing strategy covering functional, API, security, integration, and regression testing.</p>
+    <h2>Functional Test Scenarios</h2>
+    <ul>
+        <li>Verify user authentication and authorization.</li>
+        <li>Test loan application submission.</li>
+        <li>Check loan eligibility.</li>
+        <li>Verify loan approval workflow.</li>
+        <li>Test loan disbursement.</li>
+        <li>Verify repayment scheduling and tracking.</li>
+        <li>Check notifications and reminders.</li>
+        <li>Verify reporting and analytics.</li>
+    </ul>
+    <h2>API Test Scenarios</h2>
+    <ul>
+        <li>Test User API endpoints.</li>
+        <li>Test Loan API endpoints.</li>
+        <li>Test Application API endpoints.</li>
+        <li>Test Disbursement API endpoints.</li>
+        <li>Test Repayment API endpoints.</li>
+        <li>Test Notification API endpoints.</li>
+    </ul>
+    <h2>Security Test Scenarios</h2>
+    <ul>
+        <li>Test AES-256 encryption.</li>
+        <li>Test OAuth2 authentication.</li>
+        <li>Test RBAC authorization.</li>
+        <li>Test secure key management practices.</li>
+        <li>Test token expiration and revocation policies.</li>
+        <li>Test role definitions and permissions.</li>
+    </ul>
+    <h2>Integration Test Scenarios</h2>
+    <ul>
+        <li>Test integration with Credit Bureau API.</li>
+        <li>Test integration with Payment Gateway.</li>
+        <li>Test integration with Email Service.</li>
+    </ul>
+    <h2>Regression Test Scenarios</h2>
+    <ul>
+        <li>Regression test after each new feature addition or bug fix.</li>
+    </ul>
+    <h2>QA Notes</h2>
+    <ul>
+        <li>Ensure secure key management practices for AES-256 encryption.</li>
+        <li>Define token expiration and revocation policies for OAuth2 authentication.</li>
+        <li>Clearly define roles and permissions for RBAC authorization.</li>
+        <li>Configure load balancing and auto-scaling for the microservices.</li>
+        <li>Optimize the PostgreSQL database for performance.</li>
+        <li>Establish version control strategies and code review processes.</li>
+        <li>Develop a disaster recovery plan and backup strategy.</li>
+        <li>Implement monitoring and logging mechanisms.</li>
+    </ul>
+</body>
+</html>
