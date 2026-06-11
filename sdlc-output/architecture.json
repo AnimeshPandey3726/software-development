@@ -2,14 +2,14 @@
   "success": true,
   "stage": "architect-json",
   "format": "json",
-  "runtimeSessionId": "b870c180-8c9a-4dfc-9386-d2aae534cf2d",
-  "requestId": "4f21d504-47c5-448e-a604-e0bb3c227b17",
-  "event_count": 535,
+  "runtimeSessionId": "dea3e8d5-10b6-4b55-bf5d-4efc7d905f01",
+  "requestId": "f6f3469e-82f5-43ce-8bbb-b2ec7816ee4a",
+  "event_count": 496,
   "stop_reason": "end_turn",
   "usage": {
-    "inputTokens": 2501,
-    "outputTokens": 462,
-    "totalTokens": 2963
+    "inputTokens": 3931,
+    "outputTokens": 392,
+    "totalTokens": 4323
   },
-  "final_text": "{\n  \"project_name\": \"Loan Management System\",\n  \"business_summary\": \"A system to manage loan applications, approvals, disbursements, and repayments.\",\n  \"actors\": [\n    \"Customers\",\n    \"Loan Officers\",\n    \"Administrators\"\n  ],\n  \"functional_requirements\": [\n    \"User registration and authentication\",\n    \"Loan application submission\",\n    \"Loan approval workflow\",\n    \"Disbursement processing\",\n    \"Repayment tracking\"\n  ],\n  \"non_functional_requirements\": [\n    \"High availability\",\n    \"Scalability\",\n    \"Security\"\n  ],\n  \"technology_stack\": {\n    \"backend\": \"Java, Spring Boot\",\n    \"database\": \"MySQL\",\n    \"frontend\": \"Angular\",\n    \"containerization\": \"Docker\"\n  },\n  \"architecture_pattern\": \"Microservices\",\n  \"modules\": [\n    \"User Management\",\n    \"Loan Application\",\n    \"Approval Workflow\",\n    \"Disbursement\",\n    \"Repayment\"\n  ],\n  \"entities\": [\n    \"User\",\n    \"Loan\",\n    \"Application\",\n    \"Disbursement\",\n    \"Repayment\"\n  ],\n  \"apis\": [\n    \"User API\",\n    \"Loan API\",\n    \"Application API\",\n    \"Disbursement API\",\n    \"Repayment API\"\n  ],\n  \"integrations\": [\n    \"Third-party credit scoring\",\n    \"Payment gateway\"\n  ],\n  \"security\": {\n    \"authentication\": \"OAuth2\",\n    \"data_encryption\": \"Encryption for sensitive data\",\n    \"audits\": \"Regular security audits\"\n  },\n  \"developer_handoff\": [\n    \"Detailed API documentation\",\n    \"Code reviews\"\n  ],\n  \"qa_handoff\": [\n    \"Test cases\",\n    \"Staging environment\"\n  ],\n  \"deployment_handoff\": [\n    \"CI/CD pipeline\",\n    \"Docker containers\"\n  ]\n}"
+  "final_text": "{\n  \"project_name\": \"Loan Management System\",\n  \"business_summary\": \"A system to manage loan applications, approvals, disbursements, and repayments.\",\n  \"actors\": [\n    \"Customers\",\n    \"Loan Officers\",\n    \"Administrators\"\n  ],\n  \"functional_requirements\": [\n    \"Customer registration\",\n    \"Loan application submission\",\n    \"Loan approval workflow\",\n    \"Loan disbursement\",\n    \"Loan repayment processing\"\n  ],\n  \"non_functional_requirements\": [\n    \"High availability\",\n    \"Scalability\",\n    \"Security\",\n    \"Performance\"\n  ],\n  \"technology_stack\": {\n    \"frontend\": \"React\",\n    \"backend\": \"Node.js\",\n    \"database\": \"PostgreSQL\",\n    \"api_gateway\": \"AWS API Gateway\",\n    \"authentication\": \"OAuth 2.0\"\n  },\n  \"architecture_pattern\": \"Microservices\",\n  \"modules\": [\n    \"User Management\",\n    \"Loan Application\",\n    \"Loan Processing\",\n    \"Payment Processing\"\n  ],\n  \"entities\": [\n    \"User\",\n    \"Loan\",\n    \"Payment\"\n  ],\n  \"apis\": [\n    \"User API\",\n    \"Loan API\",\n    \"Payment API\"\n  ],\n  \"integrations\": [\n    \"Third-party credit check service\",\n    \"Payment gateway\"\n  ],\n  \"security\": {\n    \"protocols\": [\n      \"HTTPS\"\n    ],\n    \"authentication\": [\n      \"OAuth 2.0\"\n    ],\n    \"encryption\": [\n      \"Encryption at rest and in transit\"\n    ]\n  },\n  \"developer_handoff\": [\n    \"API documentation and codebase access\"\n  ],\n  \"qa_handoff\": [\n    \"Test cases and environment setup\"\n  ],\n  \"deployment_handoff\": [\n    \"CI/CD pipeline and deployment scripts\"\n  ]\n}"
 }
