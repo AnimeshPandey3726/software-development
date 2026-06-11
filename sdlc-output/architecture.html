@@ -1,81 +1,91 @@
 {
   "structured_output": {
     "project_name": "Loan Management System",
-    "business_summary": "A system to manage loan applications, approvals, and disbursements efficiently.",
+    "business_summary": "The Loan Management System is designed to streamline the loan application, approval, and disbursement processes. It aims to provide a seamless experience for customers while ensuring compliance with regulatory requirements and reducing operational costs for the bank.",
     "actors": [
       "Customers",
       "Loan Officers",
       "Underwriters",
+      "Compliance Officers",
       "IT Support"
     ],
     "functional_requirements": [
+      "Customer Registration",
       "Loan Application Submission",
       "Document Upload",
       "Loan Approval Workflow",
-      "Disbursement Processing",
-      "Repayment Tracking"
+      "Disbursement Process",
+      "Customer Notifications",
+      "Reporting and Analytics"
     ],
     "non_functional_requirements": [
       "High Availability",
       "Scalability",
       "Security",
-      "Compliance with Financial Regulations"
+      "Performance",
+      "Compliance"
     ],
     "technology_stack": {
-      "backend": "Spring Boot",
-      "frontend": "Angular",
-      "database": "MySQL",
-      "messaging": "Kafka",
-      "containerization": "Docker",
-      "orchestration": "Kubernetes"
+      "frontend": "React",
+      "backend": "Node.js",
+      "database": "PostgreSQL",
+      "api_gateway": "AWS API Gateway",
+      "authentication": "OAuth 2.0",
+      "hosting": "AWS"
     },
-    "architecture_pattern": "Microservices Architecture",
+    "architecture_pattern": "Microservices",
     "modules": [
-      "Loan Application Service",
-      "Document Management Service",
-      "Workflow Service",
-      "Disbursement Service",
-      "Repayment Service"
+      "Customer Management",
+      "Loan Application",
+      "Document Management",
+      "Workflow Management",
+      "Disbursement Management",
+      "Notification Management",
+      "Reporting and Analytics"
     ],
     "entities": [
       "Customer",
-      "Loan Application",
+      "LoanApplication",
       "Document",
       "Workflow",
       "Disbursement",
-      "Repayment"
+      "Notification",
+      "Report"
     ],
     "apis": [
-      "SubmitLoanApplication",
-      "UploadDocument",
-      "ApproveLoan",
-      "DisburseLoan",
-      "RecordRepayment"
+      "Customer API",
+      "Loan Application API",
+      "Document API",
+      "Workflow API",
+      "Disbursement API",
+      "Notification API",
+      "Reporting API"
     ],
     "integrations": [
-      "Credit Bureau API",
-      "Payment Gateway API"
+      "Credit Bureau",
+      "KYC Provider",
+      "Payment Gateway"
     ],
     "security": {
-      "authentication": "OAuth2",
-      "data_protection": "Encryption for data at rest and in transit",
-      "audits": "Regular security audits"
+      "authentication": "OAuth 2.0",
+      "data_encryption": "At rest and in transit",
+      "compliance": "GDPR, PCI DSS"
     },
     "developer_handoff": [
       "API documentation",
-      "Codebase structure",
-      "CI/CD pipeline setup"
+      "Code repositories",
+      "Development environment setup guide"
     ],
     "qa_handoff": [
-      "Test cases for each module",
-      "API testing",
-      "Integration testing"
+      "Test cases",
+      "Test environment setup guide",
+      "Bug tracking process"
     ],
     "deployment_handoff": [
-      "Kubernetes deployment scripts",
-      "Monitoring setup",
-      "Backup and recovery plan"
+      "Deployment scripts",
+      "Monitoring and alerting setup",
+      "Incident response plan"
     ]
   },
-  "html_output": "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Loan Management System Architecture</title><style>body{font-family:Arial,sans-serif;margin:0;padding:0;background-color:#f4f4f4;}.container{max-width:1200px;margin:20px auto;padding:20px;}.hero{background-color:#003366;color:#fff;padding:50px 20px;text-align:center;}.hero h1{margin:0;font-size:36px;}.hero p{margin:10px 0 0;font-size:18px;}.card{background-color:#fff;padding:20px;margin:20px 0;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,0.1);}.card h2{margin:0 0 10px;font-size:24px;color:#003366;}.card p{margin:0 0 10px;font-size:16px;}.card ul{margin:0;padding:0;list-style:none;}.card ul li{margin:5px 0;font-size:16px;}.badge{display:inline-block;padding:5px 10px;background-color:#007bff;color:#fff;border-radius:3px;font-size:14px;margin:5px 0;}</style></head><body><div class=\"container\"><div class=\"hero\"><h1>Loan Management System</h1><p>A system to manage loan applications, approvals, and disbursements efficiently.</p></div><div class=\"card\"><h2>Business Summary</h2><p>A system to manage loan applications, approvals, and disbursements efficiently.</p></div><div class=\"card\"><h2>Key Stakeholders / Actors</h2><ul><li>Customers</li><li>Loan Officers</li><li>Underwriters</li><li>IT Support</li></ul></div><div class=\"card\"><h2>Functional Requirements</h2><ul><li>Loan Application Submission</li><li>Document Upload</li><li>Loan Approval Workflow</li><li>Disbursement Processing</li><li>Repayment Tracking</li></ul></div><div class=\"card\"><h2>Non-Functional Requirements</h2><ul><li>High Availability</li><li>Scalability</li><li>Security</li><li>Compliance with Financial Regulations</li></ul></div><div class=\"card\"><h2>Technology Stack</h2><p><span class=\"badge\">Backend: Spring Boot</span></p><p><span class=\"badge\">Frontend: Angular</span></p><p><span class=\"badge\">Database: MySQL</span></p><p><span class=\"badge\">Messaging: Kafka</span></p><p><span class=\"badge\">Containerization: Docker</span></p><p><span class=\"badge\">Orchestration: Kubernetes</span></p></div><div class=\"card\"><h2>Architecture Pattern</h2><p>Microservices Architecture</p></div><div class=\"card\"><h2>Core Modules</h2><ul><li>Loan Application Service</li><li>Document Management Service</li><li>Workflow Service</li><li>Disbursement Service</li><li>Repayment Service</li></ul></div><div class=\"card\"><h2>Entities / Domain Model</h2><ul><li>Customer</li><li>Loan Application</li><li>Document</li><li>Workflow</li><li>Disbursement</li><li>Repayment</li></ul></div><div class=\"card\"><h2>API Landscape</h2><ul><li>SubmitLoanApplication</li><li>UploadDocument</li><li>ApproveLoan</li><li>DisburseLoan</li><li>RecordRepayment</li></ul></div><div class=\"card\"><h2>External Integrations</h2><ul><li>Credit Bureau API</li><li>Payment Gateway API</li></ul></div><div class=\"card\"><h2>Security & Compliance Summary</h2><p><span class=\"badge\">Authentication: OAuth2</span></p><p><span class=\"badge\">Data Protection: Encryption for data at rest and in transit</span></p><p><span class=\"badge\">Audits: Regular security audits</span></p></div><div class=\"card\"><h2>Developer Handoff</h2><ul><li>API documentation</li><li>Codebase structure</li><li>CI/CD pipeline setup</li></ul></div><div class=\"card\"><h2>QA Handoff</h2><ul><li>Test cases for each module</li><li>API testing</li><li>Integration testing</li></ul></div><div class=\"card\"><h2>Deployment Handoff</h2><ul><li>Kubernetes deployment scripts</li><li>Monitoring setup</li><li>Backup and recovery plan</li></ul></div><div class=\"card\"><h2>Recommended Next Steps</h2><p>Initiate development of Loan Application Service</p></div></div></body></html>"
+  "html_output": "<!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><title>Loan Management System Architecture</title><style>body{font-family:Arial,sans-serif;background-color:#f4f4f9;color:#333;margin:0;padding:0}h1,h2,h3{color:#003366}.container{max-width:1200px;margin:20px auto;padding:20px}.card{background-color:#fff;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.1);margin-bottom:20px;padding:20px}.highlight{background-color:#e3f2fd;border-radius:4px;display:inline-block;padding:2px 6px}.badge{background-color:#007bff;border-radius:4px;color:#fff;display:inline-block;font-size:.75rem;padding:4px 8px}.table{border-collapse:collapse;width:100%}.table th,.table td{border:1px solid #ddd;padding:8px;text-align:left}.table th{background-color:#f2f2f2}</style></head><body><div class=\"container\"><h1>Loan Management System Architecture</h1><section class=\"leadership-view\"><h2>Leadership View</h2><p>The Loan Management System is a comprehensive solution designed to streamline the loan application, approval, and disbursement processes. It aims to provide a seamless experience for customers while ensuring compliance with regulatory requirements and reducing operational costs for the bank.</p></section><section class=\"business-value\"><h2>Business Value</h2><p>The system will improve customer satisfaction by providing a seamless loan application experience, increase operational efficiency by automating workflows, and ensure compliance with regulatory requirements.</p></section><section class=\"business-summary card\"><h2>Business Summary</h2><p>The Loan Management System is designed to streamline the loan application, approval, and disbursement processes. It aims to provide a seamless experience for customers while ensuring compliance with regulatory requirements and reducing operational costs for the bank.</p></section><section class=\"key-stakeholders card\"><h2>Key Stakeholders / Actors</h2><ul><li>Customers</li><li>Loan Officers</li><li>Underwriters</li><li>Compliance Officers</li><li>IT Support</li></ul></section><section class=\"functional-requirements card\"><h2>Functional Requirements</h2><ul><li>Customer Registration</li><li>Loan Application Submission</li><li>Document Upload</li><li>Loan Approval Workflow</li><li>Disbursement Process</li><li>Customer Notifications</li><li>Reporting and Analytics</li></ul></section><section class=\"non-functional-requirements card\"><h2>Non-Functional Requirements</h2><ul><li>High Availability</li><li>Scalability</li><li>Security</li><li>Performance</li><li>Compliance</li></ul></section><section class=\"technology-stack card\"><h2>Technology Stack</h2><table class=\"table\"><thead><tr><th>Component</th><th>Technology</th></tr></thead><tbody><tr><td>Frontend</td><td>React</td></tr><tr><td>Backend</td><td>Node.js</td></tr><tr><td>Database</td><td>PostgreSQL</td></tr><tr><td>API Gateway</td><td>AWS API Gateway</td></tr><tr><td>Authentication</td><td>OAuth 2.0</td></tr><tr><td>Hosting</td><td>AWS</td></tr></tbody></table></section><section class=\"architecture-pattern card\"><h2>Architecture Pattern</h2><p>Microservices</p></section><section class=\"core-modules card\"><h2>Core Modules</h2><ul><li>Customer Management</li><li>Loan Application</li><li>Document Management</li><li>Workflow Management</li><li>Disbursement Management</li><li>Notification Management</li><li>Reporting and Analytics</li></ul></section><section class=\"entities card\"><h2>Entities / Domain Model</h2><ul><li>Customer</li><li>LoanApplication</li><li>Document</li><li>Workflow</li><li>Disbursement</li><li>Notification</li><li>Report</li></ul></section><section class=\"apis card\"><h2>API Landscape</h2><ul><li>Customer API</li><li>Loan Application API</li><li>Document API</li><li>Workflow API</li><li>Disbursement API</li><li>Notification API</li><li>Reporting API</li></ul></section><section class=\"integrations card\"><h2>External Integrations</h2><ul><li>Credit Bureau</li><li>KYC Provider</li><li>Payment Gateway</li></ul></section><section class=\"security card\"><h2>Security & Compliance Summary</h2><p>The system will implement OAuth 2.0 for authentication, encrypt sensitive data at rest and in transit, and comply with relevant regulations such as GDPR and PCI DSS.</p></section><section class=\"developer-handoff card\"><h2>Developer Handoff</h2><ul><li>API documentation</li><li>Code repositories</li><li>Development environment setup guide</li></ul></section><section class=\"qa-handoff card\"><h2>QA Handoff</h2><ul><li>Test cases</li><li>Test environment setup guide</li><li>Bug tracking process</li></ul></section><section class=\"deployment-handoff card\"><h2>Deployment Handoff</h2><ul><li>Deployment scripts</li><li>Monitoring and alerting setup</li><li>Incident response plan</li></ul></section><section class=\"next-steps card\"><h2>Recommended Next Steps</h2><ul><li>Finalize technology stack</li><li>Develop detailed design documents</li><li>Begin development</li></ul></section></div></body></html>"
 }
