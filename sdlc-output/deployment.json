@@ -1,8 +1,15 @@
 {
   "success": true,
   "stage": "deploy",
-  "runtimeSessionId": "c2db0764-53d9-4177-995b-46cd78d14fee",
-  "requestId": "32c09ca7-8d3a-4618-b875-9b90f33e8117",
-  "event_count": 29,
-  "final_text": "<thinking\n>\nThe\ninput\nis\ninvalid\nas\nper\nthe\ngiven\nrules\n,\nso\nI\nshould\nreturn\nan\nerror\nmessage\n.\n</\nthinking\n>"
+  "format": "json",
+  "runtimeSessionId": "2fe9f1cf-e809-4468-a7c9-83b6c009f007",
+  "requestId": "5314c3a0-2643-4541-b3e8-717057ef26d9",
+  "event_count": 12,
+  "stop_reason": "end_turn",
+  "usage": {
+    "inputTokens": 1027,
+    "outputTokens": 8,
+    "totalTokens": 1035
+  },
+  "final_text": "{\"error\":\"invalid_request\"}"
 }
