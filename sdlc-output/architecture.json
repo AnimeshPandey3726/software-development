@@ -1,4 +1,4 @@
 {
   "success": false,
-  "error": "An error occurred (ValidationException) when calling the InvokeAgentRuntime operation: The agent runtime arn:aws:bedrock-agentcore:us-east-1:652816804149:runtime/harness_harness_9ghtr-P1xpVr8ey8 is managed by a harness and cannot be invoked directly. Use the InvokeHarness API with the relevant harness ID instead."
+  "error": "An error occurred (AccessDeniedException) when calling the InvokeAgentRuntime operation: User: arn:aws:sts::652816804149:assumed-role/sd-lifecycle-orchestrator-role-tt2rrsv6/sd-lifecycle-orchestrator is not authorized to perform: bedrock-agentcore:InvokeAgentRuntime on resource: arn:aws:bedrock-agentcore:us-east-1:652816804149:runtime/harness_harness_9ghtr-P1xpVr8ey8 because no identity-based policy allows the bedrock-agentcore:InvokeAgentRuntime action"
 }
