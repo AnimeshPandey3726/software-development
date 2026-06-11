@@ -1,8 +1,8 @@
 {
   "success": true,
   "stage": "deploy",
-  "runtimeSessionId": "8eec5d6e-0189-4741-9157-32be43e074f7",
-  "requestId": "22275728-4df5-45f3-8c2f-57ad7904f416",
-  "event_count": 71,
-  "final_text": "<thinking\n>\nThe\ninput\nprovided\ndoes\nnot\nmatch\nthe\nrequired\nschema\nfor\ngenerating\nthe\ndeployment\noutput\nJSON\n.\nThe\ninput\ncontains\ndetails\nabout\ntest\nrecommendations\n,\nquality\nscores\n,\nand\ntest\nassets\n,\nbut\nit\ndoes\nnot\nprovide\nthe\nnecessary\ninformation\nto\ndetermine\nthe\ndeployment\nstatus\n,\nreadiness\nscore\n,\nor\nother\ndeployment\n-\nrelated\ndetails\nas\nspecified\nin\nthe\nschema\n.\n</\nthinking\n>"
+  "runtimeSessionId": "02dc945a-11bb-48c4-80d4-adcc053e008f",
+  "requestId": "00506c08-3c31-45fc-a415-fe38c3d4529f",
+  "event_count": 12,
+  "final_text": "{\"\nerror\n\":\"\ninvalid\n_\nrequest\n\"}"
 }
