@@ -1,5 +1,5 @@
 {
   "success": false,
   "stage": "qa",
-  "error": "An error occurred (AccessDeniedException) when calling the InvokeHarness operation: User: arn:aws:sts::652816804149:assumed-role/sd-lifecycle-orchestrator-role-tt2rrsv6/sd-lifecycle-orchestrator is not authorized to perform: bedrock-agentcore:InvokeHarness on resource: arn:aws:bedrock-agentcore:us-east-1:652816804149:runtime/harness_harness_qvhka-LHzrGpFrFU because no identity-based policy allows the bedrock-agentcore:InvokeHarness action"
+  "error": "An error occurred (AccessDeniedException) when calling the InvokeHarness operation: User: arn:aws:sts::652816804149:assumed-role/sd-lifecycle-orchestrator-role-tt2rrsv6/sd-lifecycle-orchestrator is not authorized to perform: bedrock-agentcore:InvokeAgentRuntime on resource: arn:aws:bedrock-agentcore:us-east-1:652816804149:runtime/harness_harness_qvhka-LHzrGpFrFU because no identity-based policy allows the bedrock-agentcore:InvokeAgentRuntime action"
 }
