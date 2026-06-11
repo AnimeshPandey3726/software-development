@@ -1,5 +1,8 @@
 {
-  "success": false,
+  "success": true,
   "stage": "deploy",
-  "error": "An error occurred (AccessDeniedException) when calling the InvokeHarness operation: User: arn:aws:sts::652816804149:assumed-role/sd-lifecycle-orchestrator-role-tt2rrsv6/sd-lifecycle-orchestrator is not authorized to perform: bedrock-agentcore:InvokeAgentRuntime on resource: arn:aws:bedrock-agentcore:us-east-1:652816804149:runtime/harness_harness_d3rnn-E147uNBrbD because no identity-based policy allows the bedrock-agentcore:InvokeAgentRuntime action"
+  "runtimeSessionId": "8eec5d6e-0189-4741-9157-32be43e074f7",
+  "requestId": "22275728-4df5-45f3-8c2f-57ad7904f416",
+  "event_count": 71,
+  "final_text": "<thinking\n>\nThe\ninput\nprovided\ndoes\nnot\nmatch\nthe\nrequired\nschema\nfor\ngenerating\nthe\ndeployment\noutput\nJSON\n.\nThe\ninput\ncontains\ndetails\nabout\ntest\nrecommendations\n,\nquality\nscores\n,\nand\ntest\nassets\n,\nbut\nit\ndoes\nnot\nprovide\nthe\nnecessary\ninformation\nto\ndetermine\nthe\ndeployment\nstatus\n,\nreadiness\nscore\n,\nor\nother\ndeployment\n-\nrelated\ndetails\nas\nspecified\nin\nthe\nschema\n.\n</\nthinking\n>"
 }
