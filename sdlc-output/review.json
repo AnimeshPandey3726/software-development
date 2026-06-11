@@ -1,8 +1,15 @@
 {
   "success": true,
   "stage": "reviewer",
-  "runtimeSessionId": "c6a7fb68-d192-486c-b25f-bf20a1860000",
-  "requestId": "fdf86a69-22c2-4bcb-aca7-c962dfa75367",
-  "event_count": 31,
-  "final_text": "<thinking\n>\nThe\ninput\nprovided\nis\nnot\na\nvalid\nJSON\nobject\n,\nso\nI\nwill\nreturn\nthe\nerror\nmessage\nas\nspecified\n.\n</\nthinking\n>"
+  "format": "json",
+  "runtimeSessionId": "ddeb9fab-b084-4883-a511-04355d83ab06",
+  "requestId": "ce177649-1e7f-4922-ba88-676db26fe7a2",
+  "event_count": 12,
+  "stop_reason": "end_turn",
+  "usage": {
+    "inputTokens": 959,
+    "outputTokens": 8,
+    "totalTokens": 967
+  },
+  "final_text": "{\"error\":\"invalid_request\"}"
 }
