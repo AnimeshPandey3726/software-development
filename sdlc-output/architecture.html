@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Worldcup Management System</title>
+    <title>Cricket Worldcup Management System Architecture</title>
     <style>
         body { font-family: Arial, sans-serif; }
-        h1, h2, h3 { color: #333; }
-      .section { margin-bottom: 20px; }
-      .diagram { text-align: center; }
+        h1, h2 { color: #333; }
+       .section { margin-bottom: 20px; }
+       .diagram { width: 100%; max-width: 800px; }
+        svg { display: block; margin: 20px auto; }
     </style>
 </head>
 <body>
     <h1>Cricket Worldcup Management System</h1>
-    <div class="section">
+    <div class='section'>
         <h2>Business Summary</h2>
-        <p>Manage and organize the Cricket Worldcup events, teams, players, and matches.</p>
+        <p>The Cricket Worldcup Management System is designed to manage and organize the cricket worldcup events, including player registrations, match scheduling, and results management.</p>
     </div>
-    <div class="section">
+    <div class='section'>
         <h2>Actors</h2>
-        <p>Admin, Team Manager, Player, Fan</p>
-    </div>
-    <div class="section">
-        <h2>Functional Requirements</h2>
         <ul>
-            <li>User authentication and authorization</li>
-            <li>Event management</li>
-            <li>Team and player management</li>
-            <li>Match scheduling and results</li>
-            <li>Fan engagement and notifications</li>
+            <li>Administrators</li>
+            <li>Players</li>
+            <li>Coaches</li>
+            <li>Spectators</li>
         </ul>
     </div>
-    <div class="section">
+    <div class='section'>
+        <h2>Functional Requirements</h2>
+        <ul>
+            <li>User registration and authentication</li>
+            <li>Match scheduling and management</li>
+            <li>Player statistics tracking</li>
+            <li>Live score updates</li>
+            <li>Notifications and alerts</li>
+        </ul>
+    </div>
+    <div class='section'>
         <h2>Non-Functional Requirements</h2>
         <ul>
             <li>High availability</li>
@@ -40,78 +44,89 @@
             <li>Performance</li>
         </ul>
     </div>
-    <div class="section">
+    <div class='section'>
         <h2>Technology Stack</h2>
-        <p>Frontend: React, Backend: Node.js, Database: MongoDB, Cloud: AWS</p>
-    </div>
-    <div class="section">
-        <h2>Architecture Pattern</h2>
-        <p>Microservices</p>
-    </div>
-    <div class="section">
-        <h2>Modules</h2>
         <ul>
-            <li>Authentication</li>
-            <li>Event Management</li>
-            <li>Team Management</li>
-            <li>Match Management</li>
-            <li>Notification</li>
+            <li>Frontend: React</li>
+            <li>Backend: Node.js</li>
+            <li>Database: MongoDB</li>
+            <li>Authentication: JWT</li>
         </ul>
     </div>
-    <div class="section">
+    <div class='section'>
+        <h2>Architecture Pattern</h2>
+        <p>Microservices architecture</p>
+    </div>
+    <div class='section'>
+        <h2>Modules</h2>
+        <ul>
+            <li>User Management</li>
+            <li>Match Management</li>
+            <li>Statistics</li>
+            <li>Notifications</li>
+        </ul>
+    </div>
+    <div class='section'>
         <h2>Entities</h2>
         <ul>
             <li>User</li>
-            <li>Event</li>
+            <li>Match</li>
             <li>Team</li>
             <li>Player</li>
-            <li>Match</li>
         </ul>
     </div>
-    <div class="section">
+    <div class='section'>
         <h2>APIs</h2>
-        <p>RESTful APIs for all modules</p>
+        <ul>
+            <li>User API</li>
+            <li>Match API</li>
+            <li>Statistics API</li>
+            <li>Notification API</li>
+        </ul>
     </div>
-    <div class="section">
+    <div class='section'>
         <h2>Integrations</h2>
-        <p>Third-party services for payments and notifications</p>
+        <ul>
+            <li>Email service</li>
+            <li>SMS service</li>
+            <li>Third-party statistics API</li>
+        </ul>
     </div>
-    <div class="section">
+    <div class='section'>
         <h2>Security Summary</h2>
-        <p>OAuth for authentication, HTTPS for data transmission, encryption for sensitive data</p>
+        <ul>
+            <li>HTTPS</li>
+            <li>JWT for authentication</li>
+            <li>Data encryption</li>
+        </ul>
     </div>
-    <div class="section">
+    <div class='section'>
         <h2>Developer Handoff</h2>
-        <p>API documentation and code repository</p>
+        <p>Detailed API documentation and codebase available on GitHub.</p>
     </div>
-    <div class="section">
+    <div class='section'>
         <h2>QA Handoff</h2>
-        <p>Test cases and environment setup</p>
+        <p>Test cases and environment setup instructions provided.</p>
     </div>
-    <div class="section">
+    <div class='section'>
         <h2>Deployment Handoff</h2>
-        <p>CI/CD pipeline and deployment scripts</p>
+        <p>CI/CD pipeline configured with automated deployment to cloud services.</p>
     </div>
-    <div class="diagram">
+    <div class='section'>
         <h2>Architecture Diagram</h2>
-        <svg width="500" height="300" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="10" width="100" height="50" fill="lightblue" />
-            <text x="15" y="40" fill="black">User</text>
-            <rect x="130" y="10" width="100" height="50" fill="lightgreen" />
-            <text x="135" y="40" fill="black">Authentication</text>
-            <rect x="250" y="10" width="100" height="50" fill="lightcoral" />
-            <text x="255" y="40" fill="black">Event Management</text>
-            <rect x="370" y="10" width="100" height="50" fill="lightgoldenrodyellow" />
-            <text x="375" y="40" fill="black">Team Management</text>
-            <rect x="10" y="80" width="100" height="50" fill="lightpink" />
-            <text x="15" y="110" fill="black">Match Management</text>
-            <rect x="130" y="80" width="100" height="50" fill="lightsteelblue" />
-            <text x="135" y="110" fill="black">Notification</text>
-            <line x1="110" y1="35" x2="130" y2="35" stroke="black" />
-            <line x1="230" y1="35" x2="250" y2="35" stroke="black" />
-            <line x1="350" y1="35" x2="370" y2="35" stroke="black" />
-            <line x1="110" y1="105" x2="130" y2="105" stroke="black" />
-        </svg>
+        <div class='diagram'>
+            <svg viewBox='0 0 800 400' xmlns='http://www.w3.org/2000/svg'>
+                <rect x='10' y='10' width='380' height='100' fill='lightblue'/>
+                <rect x='410' y='10' width='380' height='100' fill='lightgreen'/>
+                <rect x='10' y='130' width='780' height='250' fill='lightyellow'/>
+                <text x='200' y='60' font-size='20' font-weight='bold'>Frontend</text>
+                <text x='620' y='60' font-size='20' font-weight='bold'>Backend</text>
+                <text x='400' y='300' font-size='20' font-weight='bold'>Database</text>
+                <line x1='400' y1='120' x2='400' y2='130' stroke='black' stroke-width='2'/>
+                <line x1='200' y1='110' x2='200' y2='130' stroke='black' stroke-width='2'/>
+                <line x1='600' y1='110' x2='600' y2='130' stroke='black' stroke-width='2'/>
+            </svg>
+        </div>
     </div>
 </body>
 </html>
