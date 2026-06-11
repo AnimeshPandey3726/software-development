@@ -1,1 +1,57 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Loan Management System Architecture</title><style>body {font-family: Arial, sans-serif;} h1, h2 {color: #333;}.section {margin-bottom: 20px;}.diagram {text-align: center;} svg {max-width: 100%; height: auto;}</style></head><body><h1>Loan Management System</h1><h2>Business Summary</h2><div class="section">A system to manage loan applications, approvals, disbursements, and repayments.</div><h2>Actors</h2><div class="section">Customers, Loan Officers, Administrators</div><h2>Functional Requirements</h2><div class="section">1. Customer registration<br>2. Loan application submission<br>3. Loan approval workflow<br>4. Loan disbursement<br>5. Loan repayment processing</div><h2>Non-Functional Requirements</h2><div class="section">1. High availability<br>2. Scalability<br>3. Security<br>4. Performance</div><h2>Technology Stack</h2><div class="section">1. Frontend: React<br>2. Backend: Node.js<br>3. Database: PostgreSQL<br>4. API Gateway: AWS API Gateway<br>5. Authentication: OAuth 2.0</div><h2>Architecture Pattern</h2><div class="section">Microservices</div><h2>Modules</h2><div class="section">1. User Management<br>2. Loan Application<br>3. Loan Processing<br>4. Payment Processing</div><h2>Entities</h2><div class="section">1. User<br>2. Loan<br>3. Payment</div><h2>APIs</h2><div class="section">1. User API<br>2. Loan API<br>3. Payment API</div><h2>Integrations</h2><div class="section">1. Third-party credit check service<br>2. Payment gateway</div><h2>Security Summary</h2><div class="section">1. HTTPS<br>2. OAuth 2.0 for authentication<br>3. Encryption at rest and in transit</div><h2>Developer Handoff</h2><div class="section">API documentation and codebase access</div><h2>QA Handoff</h2><div class="section">Test cases and environment setup</div><h2>Deployment Handoff</h2><div class="section">CI/CD pipeline and deployment scripts</div><div class="diagram"><svg width="400" height="300" xmlns="http://www.w3.org/2000/svg"><rect x="10" y="10" width="100" height="50" fill="lightblue" /><text x="15" y="40" fill="black">User</text><rect x="130" y="10" width="100" height="50" fill="lightgreen" /><text x="135" y="40" fill="black">Loan App</text><rect x="250" y="10" width="100" height="50" fill="lightyellow" /><text x="255" y="40" fill="black">Loan Proc</text><rect x="10" y="80" width="100" height="50" fill="lightpink" /><text x="15" y="110" fill="black">Payment</text><line x1="120" y1="60" x2="120" y2="90" stroke="black" /><line x1="240" y1="60" x2="240" y2="90" stroke="black" /><line x1="110" y1="35" x2="140" y2="35" stroke="black" /><line x1="230" y1="35" x2="260" y2="35" stroke="black" /></svg></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitable Management System</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        h1, h2 { color: #333; }
+        p { line-height: 1.6; }
+      .diagram { display: block; margin: 20px auto; }
+    </style>
+</head>
+<body>
+    <h1>Hospitable Management System</h1>
+    <h2>Business Summary</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <h2>Actors</h2>
+    <p>User, Administrator, Guest</p>
+    <h2>Functional Requirements</h2>
+    <p>1. User registration and authentication<br>2. Room booking and management<br>3. Guest check-in and check-out<br>4. Payment processing</p>
+    <h2>Non-Functional Requirements</h2>
+    <p>1. High availability<br>2. Scalability<br>3. Security</p>
+    <h2>Technology Stack</h2>
+    <p>Node.js, React, PostgreSQL, Docker</p>
+    <h2>Architecture Pattern</h2>
+    <p>Microservices</p>
+    <h2>Modules</h2>
+    <p>User Management, Booking System, Payment Gateway</p>
+    <h2>Entities</h2>
+    <p>User, Room, Booking, Payment</p>
+    <h2>APIs</h2>
+    <p>RESTful APIs</p>
+    <h2>Integrations</h2>
+    <p>Payment Gateway, Email Service</p>
+    <h2>Security Summary</h2>
+    <p>OAuth2, HTTPS, Encryption</p>
+    <h2>Developer Handoff</h2>
+    <p>Complete codebase, documentation</p>
+    <h2>QA Handoff</h2>
+    <p>Test cases, staging environment</p>
+    <h2>Deployment Handoff</h2>
+    <p>Docker containers, CI/CD pipeline</p>
+    <div class="diagram">
+        <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="100" height="50" style="fill:blue"/>
+            <rect x="130" y="10" width="100" height="50" style="fill:green"/>
+            <rect x="250" y="10" width="100" height="50" style="fill:red"/>
+            <line x1="120" y1="35" x2="130" y2="35" style="stroke:black;stroke-width:2"/>
+            <line x1="240" y1="35" x2="250" y2="35" style="stroke:black;stroke-width:2"/>
+            <text x="20" y="40" fill="white" font-size="12">User</text>
+            <text x="150" y="40" fill="white" font-size="12">Booking</text>
+            <text x="280" y="40" fill="white" font-size="12">Payment</text>
+        </svg>
+    </div>
+</body>
+</html>
