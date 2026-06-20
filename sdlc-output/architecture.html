@@ -6,192 +6,200 @@
 <title>Loan Management System - Architecture Blueprint</title>
 <style>
 body {
- font-family: Inter, Segoe UI, Arial, sans-serif;
- background-color: #F8FAFC;
- color: #0F172A;
- margin: 0;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  background-color: #F8FAFC;
+  color: #0F172A;
 }
 .container {
- max-width: 1200px;
- margin: 20px auto;
- padding: 20px;
- background-color: #FFFFFF;
- border-radius: 16px;
- box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+  width: 90%;
+  margin: 20px auto;
 }
-h1 {
- color: #2563EB;
- text-align: center;
-}
-h2 {
- color: #0F172A;
- margin-top: 30px;
+.hero {
+  background: linear-gradient(to right, #2563EB, #60A5FA);
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+  text-align: center;
 }
 .card {
- background-color: #FFFFFF;
- border-radius: 16px;
- box-shadow: 0 4px 8px rgba(15,23,42,0.08);
- padding: 20px;
- margin-bottom: 20px;
- border: 1px solid #E2E8F0;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+  margin-bottom: 20px;
 }
-.kpi-card {
- border: 1px solid #E2E8F0;
- padding: 15px;
- margin-bottom: 15px;
- border-radius: 8px;
- text-align: center;
-}
-.capability-grid {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
- gap: 20px;
-}
-.capability-card {
- background-color: #FFFFFF;
- border-radius: 16px;
- box-shadow: 0 4px 8px rgba(15,23,42,0.08);
- padding: 15px;
- border: 1px solid #E2E8F0;
- text-align: center;
-}
-.architecture-diagram {
- margin-top: 40px;
- text-align: center;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 .layer {
- margin-bottom: 20px;
- border: 1px solid #E2E8F0;
- padding: 10px;
- border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
-.security-pillar, .monitoring-pillar {
- border: 1px solid #E2E8F0;
- padding: 10px;
- border-radius: 8px;
+.footer {
+  text-align: center;
+  margin-top: 20px;
 }
 </style>
 </head>
 <body>
 <div class="container">
-<h1>Loan Management System</h1>
-<h2>Architecture Blueprint</h2>
+  <div class="hero">
+    <h1>Loan Management System</h1>
+    <p>Architecture Pattern: Microservices</p>
+    <p>Architecture Classification: Enterprise Solution</p>
+    <p>The Loan Management System (LMS) will streamline the loan origination, servicing, and management processes, enhancing customer experience, reducing operational costs, and ensuring regulatory compliance.</p>
+  </div>
 
-<div class="hero-banner">
-  <p><b>Project:</b> Loan Management System</p>
-  <p><b>Pattern:</b> Microservices</p>
-  <p><b>Classification:</b> Enterprise Solution</p>
-  <p>Streamlines loan processes, enhances customer experience, and ensures regulatory compliance.</p>
-</div>
+  <div class="card">
+    <h2>Leadership View</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Business Capabilities</h3>
+        <p>10+</p>
+      </div>
+      <div class="card">
+        <h3>Core Modules</h3>
+        <p>8</p>
+      </div>
+      <div class="card">
+        <h3>APIs</h3>
+        <p>5</p>
+      </div>
+      <div class="card">
+        <h3>Integrations</h3>
+        <p>5</p>
+      </div>
+    </div>
+  </div>
 
-<div class="leadership-view">
-  <div class="kpi-card"><b>Business Capabilities:</b> 12</div>
-  <div class="kpi-card"><b>Core Modules:</b> 7</div>
-  <div class="kpi-card"><b>APIs:</b> 4</div>
-  <div class="kpi-card"><b>Integrations:</b> 5</div>
-</div>
+  <div class="card">
+    <h2>Business Value</h2>
+    <ul>
+      <li>Improved Customer Experience</li>
+      <li>Reduced Operational Costs</li>
+      <li>Enhanced Regulatory Compliance</li>
+      <li>Increased Business Agility</li>
+    </ul>
+  </div>
 
-<h2>Business Value</h2>
-<ul>
-  <li>Improved customer satisfaction through faster loan processing.</li>
-  <li>Reduced operational costs through automation.</li>
-  <li>Enhanced scalability to support future growth.</li>
-  <li>Strengthened regulatory compliance.</li>
-</ul>
+  <div class="card">
+    <h2>Technology Stack</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Frontend</h3>
+        <p>React</p>
+      </div>
+      <div class="card">
+        <h3>Backend</h3>
+        <p>Node.js</p>
+      </div>
+      <div class="card">
+        <h3>Database</h3>
+        <p>PostgreSQL</p>
+      </div>
+      <div class="card">
+        <h3>Cloud</h3>
+        <p>AWS</p>
+      </div>
+      <div class="card">
+        <h3>Integration</h3>
+        <p>REST APIs</p>
+      </div>
+      <div class="card">
+        <h3>Security</h3>
+        <p>OAuth 2.0</p>
+      </div>
+    </div>
+  </div>
 
-<h2>Technology Stack</h2>
-<div class="card">
-  <h3>Frontend</h3>
-  <p>React</p>
-</div>
-<div class="card">
-  <h3>Backend</h3>
-  <p>Node.js with Express.js</p>
-</div>
-<div class="card">
-  <h3>Database</h3>
-  <p>PostgreSQL</p>
-</div>
-<div class="card">
-  <h3>Cloud</h3>
-  <p>AWS</p>
-</div>
-<div class="card">
-  <h3>Integration</h3>
-  <p>REST APIs, RabbitMQ</p>
-</div>
-<div class="card">
-  <h3>Security</h3>
-  <p>OAuth 2.0, JWT, AWS KMS</p>
-</div>
+  <div class="card">
+    <h2>Architecture Overview</h2>
+    <p>The LMS utilizes a microservices architecture to promote modularity, scalability, and resilience. Each service is independently deployable and scalable, allowing for rapid iteration and adaptation to changing business needs. Security is a paramount concern, with robust authentication, authorization, and data protection mechanisms implemented throughout the system.</p>
+  </div>
 
-<h2>Architecture Overview</h2>
-<p>The LMS utilizes a microservices architecture to promote modularity, scalability, and resilience. Each business function is implemented as an independent service, communicating via REST APIs and message queues. This approach allows for independent deployment and scaling of individual services, enabling rapid innovation and adaptation to changing business needs.</p>
+  <div class="card">
+    <h2>Core Modules</h2>
+    <div class="grid">
+      <div>Loan Application Module</div>
+      <div>Credit Scoring Module</div>
+      <div>Approval Workflow Module</div>
+      <div>Loan Servicing Module</div>
+      <div>Reporting Module</div>
+      <div>Payment Processing Module</div>
+      <div>User Management Module</div>
+      <div>Security Module</div>
+    </div>
+  </div>
 
-<h2>Core Modules</h2>
-<div class="capability-grid">
-  <div class="capability-card">Loan Origination</div>
-  <div class="capability-card">Credit Scoring</div>
-  <div class="capability-card">Loan Servicing</div>
-  <div class="capability-card">Payment Processing</div>
-  <div class="capability-card">Reporting & Analytics</div>
-  <div class="capability-card">User Management</div>
-</div>
+  <div class="card">
+    <h2>Domain Model</h2>
+    <div>LoanApplication, Customer, Loan, Payment, User, CreditScore, Approval, LoanProduct, Transaction, Account</div>
+  </div>
 
-<h2>Domain Model</h2>
-<div class="card">Loan Application, Customer, Loan, Payment, Credit Score, User, Transaction, Loan Product, Risk Assessment, Compliance Rule</div>
+  <div class="card">
+    <h2>API Landscape</h2>
+    <table>
+      <tr><th>API Name</th><th>Purpose</th><th>Consumer</th></tr>
+      <tr><td>LoanApplicationAPI</td><td>Manage Loan Applications</td><td>Loan Officers, Underwriters</td></tr>
+      <tr><td>CreditScoreAPI</td><td>Retrieve Credit Scores</td><td>Credit Scoring Module</td></tr>
+      <tr><td>PaymentAPI</td><td>Process Payments</td><td>Payment Processing Module</td></tr>
+    </table>
+  </div>
 
-<h2>API Landscape</h2>
-<table style="border-collapse: collapse; width: 100%;">
-  <thead>
-    <tr>
-      <th>API Name</th>
-      <th>Purpose</th>
-      <th>Consumer</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Loan Application API</td>
-      <td>Submit and track loan applications</td>
-      <td>Loan Officers, Customers</td>
-    </tr>
-    <tr>
-      <td>Credit Score API</td>
-      <td>Retrieve credit scores</td>
-      <td>Credit Scoring Module</td>
-    </tr>
-  </tbody>
-</table>
+  <div class="card">
+    <h2>Integrations</h2>
+    <div>Credit Bureau, Payment Gateway, Banking System, Regulatory Reporting System, Email Service</div>
+  </div>
 
-<h2>Integrations</h2>
-<div class="card">Credit Bureau, Payment Gateway, Banking System, Fraud Detection System, Regulatory Reporting System</div>
+  <div class="card">
+    <h2>Security & Compliance</h2>
+    <div class="grid">
+      <div><h3>Authentication</h3><p>OAuth 2.0</p></div>
+      <div><h3>Authorization</h3><p>RBAC</p></div>
+      <div><h3>Data Protection</h3><p>Encryption</p></div>
+      <div><h3>Audit Logging</h3><p>Comprehensive Audit Trails</p></div>
+    </div>
+  </div>
 
-<h2>Security & Compliance</h2>
-<div class="card"><b>Authentication:</b> OAuth 2.0 with JWT</div>
-<div class="card"><b>Authorization:</b> Role-Based Access Control (RBAC)</div>
-<div class="card"><b>Data Protection:</b> Encryption at rest and in transit (AES-256)</div>
-<div class="card"><b>Audit Logging:</b> Comprehensive audit logging of all system activities</div>
+  <div class="card">
+    <h2>Developer Handoff</h2>
+    <ul>
+      <li>Detailed API documentation</li>
+      <li>Code repositories</li>
+      <li>CI/CD pipelines</li>
+      <li>Unit and integration tests</li>
+    </ul>
+  </div>
 
-<h2>Handoffs</h2>
-<h3>Developer Handoff</h3>
-<ul><li>Detailed API documentation</li><li>Code repositories</li></ul>
-<h3>QA Handoff</h3>
-<ul><li>Test cases</li><li>Performance test scripts</li></ul>
-<h3>Deployment Handoff</h3>
-<ul><li>IaC scripts</li><li>Deployment checklists</li></ul>
+  <div class="card">
+    <h2>QA Handoff</h2>
+    <ul>
+      <li>Test cases</li>
+      <li>Performance test scripts</li>
+      <li>Security assessment reports</li>
+      <li>UAT plan</li>
+    </ul>
+  </div>
 
-<div class="architecture-diagram">
-  <p><b>Enterprise Architecture Layers:</b></p>
-  <div class="layer"><b>Users & Stakeholders:</b> Customer, Loan Officer, Administrator</div>
-  <div class="layer"><b>Experience Layer:</b> Web Portal, Mobile App, Admin Console</div>
-  <div class="layer"><b>API & Access Layer:</b> API Gateway, Authentication Gateway</div>
-  <div class="layer"><b>Application Services Layer:</b> Business Services, Workflow Services</div>
-  <div class="layer"><b>Business Domain Layer:</b> Loan Origination, Credit Scoring, Loan Servicing</div>
-  <div class="layer"><b>Data & Persistence Layer:</b> PostgreSQL Database</div>
-  <div class="layer"><b>External Integrations Layer:</b> Credit Bureau, Payment Gateway</div>
-</div>
+  <div class="card">
+    <h2>Deployment Handoff</h2>
+    <ul>
+      <li>IaC scripts</li>
+      <li>Deployment configuration</li>
+      <li>Monitoring setup</li>
+      <li>Disaster recovery plan</li>
+    </ul>
+  </div>
 
+  <div class="footer">
+    <p>Enterprise Solution Architecture - Strategic Technology Blueprint</p>
+  </div>
 </div>
 </body>
 </html>
