@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hospitable Management System - Architecture Blueprint</title>
+  <title>Loan Management System - Architecture Blueprint</title>
   <style>
     body {
       font-family: Inter, Segoe UI, Arial, sans-serif;
@@ -11,351 +11,163 @@
       color: #0F172A;
     }
 
-    .hero-banner {
-      background: linear-gradient(to right, #2563EB, #60A5FA); /* Primary Blue Gradient */
-      color: white;
-      padding: 2em;
-      text-align: center;
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      background-color: #FFFFFF;
       border-radius: 16px;
       box-shadow: 0 8px 24px rgba(15,23,42,0.08);
     }
 
-    .leadership-view {
+    h1 {
+      text-align: center;
+      color: #2563EB;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #0F172A;
+    }
+
+    .card {
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(15,23,42,0.05);
+      padding: 16px;
+      margin-bottom: 16px;
+      border: 1px solid #E2E8F0;
+    }
+
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5em;
-      padding: 1em;
+      gap: 20px;
     }
 
     .kpi-card {
       background-color: #FFFFFF;
-      border-radius: 16px;
-      padding: 1em;
-      box-shadow: 0 8px 24px rgba(15,23,42,0.08);
-      text-align: center;
-    }
-
-    .business-value {
-      padding: 1em;
-    }
-
-    .technology-stack {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 0.5em;
-      padding: 1em;
-    }
-
-    .tech-card {
-      background-color: #FFFFFF;
       border-radius: 8px;
-      padding: 0.5em;
+      box-shadow: 0 4px 8px rgba(15,23,42,0.05);
+      padding: 16px;
       text-align: center;
       border: 1px solid #E2E8F0;
     }
 
-    .capability-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5em;
-      padding: 1em;
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #F8FAFC;
+      border-top: 1px solid #E2E8F0;
     }
 
-    .capability-card {
-      background-color: #FFFFFF;
-      border-radius: 16px;
-      padding: 1em;
-      box-shadow: 0 8px 24px rgba(15,23,42,0.08);
-    }
-
-    .architecture-overview {
-      padding: 1em;
-    }
-
-    .module-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 0.5em;
-      padding: 1em;
-    }
-
-    .module-card {
+    /* Layer Styling */
+    .layer {
       background-color: #FFFFFF;
       border-radius: 8px;
-      padding: 0.5em;
-      text-align: center;
+      box-shadow: 0 4px 8px rgba(15,23,42,0.05);
+      padding: 16px;
+      margin-bottom: 16px;
       border: 1px solid #E2E8F0;
     }
 
-    .entity-badges {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-      gap: 0.5em;
-      padding: 1em;
+    .layer-header {
+      font-weight: bold;
+      margin-bottom: 10px;
     }
 
-    .entity-badge {
-      background-color: #E2E8F0;
-      border-radius: 8px;
-      padding: 0.5em;
-      text-align: center;
-    }
-
-    .api-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1em;
-    }
-
-    .api-table th, .api-table td {
-      border: 1px solid #E2E8F0;
-      padding: 0.5em;
-      text-align: left;
-    }
-
-    .integration-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 0.5em;
-      padding: 1em;
-    }
-
-    .integration-card {
-      background-color: #FFFFFF;
-      border-radius: 8px;
-      padding: 0.5em;
-      text-align: center;
-      border: 1px solid #E2E8F0;
-    }
-
-    .security-compliance {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5em;
-      padding: 1em;
-    }
-
-    .security-card {
-      background-color: #FFFFFF;
-      border-radius: 16px;
-      padding: 1em;
-      box-shadow: 0 8px 24px rgba(15,23,42,0.08);
-    }
-
-    .handoff-section {
-      padding: 1em;
-    }
-
-    .handoff-list {
-      list-style-type: disc;
-      padding-left: 2em;
-    }
-
-    .architecture-diagram {
-      padding: 1em;
-    }
-
-    .architecture-title {
-      text-align: center;
-      font-size: 2em;
-      margin-bottom: 0.5em;
-    }
-
-    .architecture-subtitle {
-      text-align: center;
-      font-size: 1.2em;
-      color: #64748B;
-    }
   </style>
 </head>
 <body>
-  <div class="hero-banner">
-    <h1>Hospitable Management System</h1>
-    <p>Architecture Pattern: Microservices</p>
-    <p>Architecture Classification: Enterprise Solution</p>
-    <p>Streamlining hospitality operations for enhanced guest satisfaction and efficiency.</p>
-  </div>
+  <div class="container">
+    <h1>Loan Management System</h1>
+    <h2>Strategic Technology Blueprint</h2>
 
-  <section class="leadership-view">
-    <div class="kpi-card">
-      <h3>Business Capabilities</h3>
-      <p>15+</p>
-      <p>Core business functions supported by the system.</p>
+    <div class="hero-banner">
+      <p>Architecture Pattern: Microservices</p>
+      <p>Architecture Classification: Enterprise Solution</p>
+      <p>The Loan Management System (LMS) will streamline the loan origination, servicing, and management processes, enhancing customer experience, reducing operational costs, and ensuring regulatory compliance.</p>
     </div>
-    <div class="kpi-card">
-      <h3>Core Modules</h3>
-      <p>10</p>
-      <p>Key modules driving system functionality.</p>
-    </div>
-    <div class="kpi-card">
-      <h3>APIs</h3>
-      <p>8</p>
-      <p>Primary APIs for integration and data access.</p>
-    </div>
-    <div class="kpi-card">
-      <h3>Integrations</h3>
-      <p>5+</p>
-      <p>External systems integrated for seamless operations.</p>
-    </div>
-  </section>
 
-  <section class="business-value">
+    <div class="leadership-view">
+      <div class="card kpi-card"><strong>Business Capabilities:</strong> 12</div>
+      <div class="card kpi-card"><strong>Core Modules:</strong> 5</div>
+      <div class="card kpi-card"><strong>APIs:</strong> 4</div>
+      <div class="card kpi-card"><strong>Integrations:</strong> 5</div>
+    </div>
+
     <h2>Business Value</h2>
     <ul>
-      <li>Increased guest satisfaction through personalized services.</li>
-      <li>Improved operational efficiency and reduced costs.</li>
-      <li>Enhanced scalability to support future growth.</li>
-      <li>Data-driven decision-making for optimized performance.</li>
+      <li>Enhanced Customer Experience</li>
+      <li>Reduced Operational Costs</li>
+      <li>Improved Regulatory Compliance</li>
+      <li>Increased Business Scalability</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Stakeholders</h2>
-    <p>Guests, Front Desk Staff, Managers, Housekeeping Staff, Restaurant Staff, System Administrator</p>
-  </section>
+    <h2>Technology Stack</h2>
+    <div class="grid">
+      <div class="card"><strong>Frontend:</strong> React</div>
+      <div class="card"><strong>Backend:</strong> Node.js</div>
+      <div class="card"><strong>Database:</strong> PostgreSQL</div>
+      <div class="card"><strong>Cloud:</strong> AWS</div>
+      <div class="card"><strong>Integration:</strong> REST APIs</div>
+      <div class="card"><strong>Security:</strong> OAuth 2.0</div>
+    </div>
 
-  <section>
-    <h2>Functional Requirements</h2>
-    <p>Reservation Management, Guest Check-in/Check-out, Room Management, Billing and Payment, Reporting and Analytics, Housekeeping Management, Restaurant Ordering, Inventory Management</p>
-  </section>
-
-  <section class="technology-stack">
-    <div class="tech-card">Frontend: React</div>
-    <div class="tech-card">Backend: Node.js/Express.js</div>
-    <div class="tech-card">Database: PostgreSQL</div>
-    <div class="tech-card">Cloud: AWS</div>
-    <div class="tech-card">Integration: REST APIs</div>
-    <div class="tech-card">Security: OAuth 2.0/JWT</div>
-  </section>
-
-  <section class="architecture-overview">
     <h2>Architecture Overview</h2>
-    <p>The HMS utilizes a Microservices architecture to ensure scalability, maintainability, and independent deployment.  Each module is a self-contained service communicating via REST APIs. This approach allows for flexible scaling and technology choices for individual services. Security is a primary concern, with authentication and authorization implemented at the API gateway.  Data persistence is handled by PostgreSQL, providing reliability and scalability.</p>
-  </section>
+    <p>The LMS utilizes a microservices architecture to promote modularity, scalability, and resilience.  Each business function is encapsulated within a separate service, communicating via REST APIs. This approach allows for independent deployment and scaling of individual components, facilitating agility and innovation. Security is a paramount concern, with robust authentication and authorization mechanisms implemented throughout the system.</p>
 
-  <section class="core-modules">
     <h2>Core Modules</h2>
-    <div class="module-grid">
-      <div class="module-card">Reservation Module</div>
-      <div class="module-card">Guest Management Module</div>
-      <div class="module-card">Room Management Module</div>
-      <div class="module-card">Billing Module</div>
-      <div class="module-card">Reporting Module</div>
-      <div class="module-card">Housekeeping Module</div>
-      <div class="module-card">Restaurant Module</div>
-      <div class="module-card">Inventory Module</div>
-      <div class="module-card">Authentication Module</div>
-      <div class="module-card">Notification Module</div>
+    <div class="grid">
+      <div class="card">Loan Origination</div>
+      <div class="card">Credit Scoring</div>
+      <div class="card">Loan Approval</div>
+      <div class="card">Loan Servicing</div>
+      <div class="card">Reporting & Analytics</div>
     </div>
-  </section>
 
-  <section class="domain-model">
     <h2>Domain Model</h2>
-    <div class="entity-badges">
-      <div class="entity-badge">Guest</div>
-      <div class="entity-badge">Reservation</div>
-      <div class="entity-badge">Room</div>
-      <div class="entity-badge">Invoice</div>
-      <div class="entity-badge">Payment</div>
-      <div class="entity-badge">Menu Item</div>
-      <div class="entity-badge">Order</div>
-      <div class="entity-badge">User</div>
-      <div class="entity-badge">Role</div>
-      <div class="entity-badge">HousekeepingTask</div>
-      <div class="entity-badge">InventoryItem</div>
-      <div class="entity-badge">Supplier</div>
-      <div class="entity-badge">Amenity</div>
-      <div class="entity-badge">StaffMember</div>
+    <div class="grid">
+      <div class="card">Loan Application</div>
+      <div class="card">Customer</div>
+      <div class="card">Loan</div>
+      <div class="card">Payment</div>
+      <div class="card">Credit Score</div>
     </div>
-  </section>
 
-  <section class="api-landscape">
     <h2>API Landscape</h2>
     <table>
-      <thead>
-        <tr>
-          <th>API Name</th>
-          <th>Purpose</th>
-          <th>Consumer</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Reservation API</td>
-          <td>Manage reservations</td>
-          <td>Web Portal, Mobile App</td>
-        </tr>
-        <tr>
-          <td>Guest API</td>
-          <td>Manage guest information</td>
-          <td>Front Desk, Managers</td>
-        </tr>
-        <tr>
-          <td>Room API</td>
-          <td>Manage room availability</td>
-          <td>Front Desk, Managers</td>
-        </tr>
-        <tr>
-          <td>Billing API</td>
-          <td>Process payments</td>
-          <td>Front Desk, Managers</td>
-        </tr>
-      </tbody>
+      <tr><th>API Name</th><th>Purpose</th><th>Consumer</th></tr>
+      <tr><td>Loan Application API</td><td>Submit loan applications</td><td>Loan Officers</td></tr>
+      <tr><td>Credit Score API</td><td>Retrieve credit scores</td><td>Credit Scoring Service</td></tr>
     </table>
-  </section>
 
-  <section class="integrations">
     <h2>Integrations</h2>
-    <div class="integration-cards">
-      <div class="integration-card">Stripe</div>
-      <div class="integration-card">SendGrid</div>
-      <div class="integration-card">Twilio</div>
-      <div class="integration-card">QuickBooks</div>
-      <div class="integration-card">Expedia</div>
+    <div class="grid">
+      <div class="card">Credit Bureau</div>
+      <div class="card">Payment Gateway</div>
+      <div class="card">Banking System</div>
     </div>
-  </section>
 
-  <section class="security-compliance">
     <h2>Security & Compliance</h2>
-    <div class="security-card"><h3>Authentication</h3><p>OAuth 2.0 with JWT</p></div>
-    <div class="security-card"><h3>Authorization</h3><p>Role-Based Access Control (RBAC)</p></div>
-    <div class="security-card"><h3>Data Protection</h3><p>Encryption at rest and in transit (TLS)</p></div>
-    <div class="security-card"><h3>Audit Logging</h3><p>Comprehensive audit trails</p></div>
-  </section>
+    <div class="grid">
+      <div class="card"><strong>Authentication:</strong> OAuth 2.0</div>
+      <div class="card"><strong>Authorization:</strong> RBAC</div>
+      <div class="card"><strong>Data Protection:</strong> Encryption at rest/transit</div>
+      <div class="card"><strong>Audit Logging:</strong> Comprehensive trails</div>
+    </div>
 
-  <section class="handoff-section">
-    <h2>Developer Handoff</h2>
-    <ul class="handoff-list">
-      <li>Detailed API documentation</li>
-      <li>Automated CI/CD pipelines</li>
-      <li>Comprehensive unit tests</li>
-      <li>Code style guidelines</li>
-    </ul>
-  </section>
+    <h2>Handoffs</h2>
+    <h3>Developer Handoff</h3>
+    <ul><li>Detailed API documentation</li><li>Automated CI/CD pipelines</li></ul>
+    <h3>QA Handoff</h3>
+    <ul><li>Test cases for all requirements</li></ul>
+    <h3>Deployment Handoff</h3>
+    <ul><li>IaC templates</li></ul>
 
-  <section class="handoff-section">
-    <h2>QA Handoff</h2>
-    <ul class="handoff-list">
-      <li>Test cases for all requirements</li>
-      <li>Performance testing scripts</li>
-      <li>Security assessment reports</li>
-      <li>UAT plan</li>
-    </ul>
-  </section>
-
-  <section class="handoff-section">
-    <h2>Deployment Handoff</h2>
-    <ul class="handoff-list">
-      <li>IaC templates</li>
-      <li>Deployment scripts</li>
-      <li>Monitoring dashboards</li>
-      <li>Disaster recovery plan</li>
-    </ul>
-  </section>
-
-  <section class="architecture-diagram">
-    <p>Architecture Diagram (Placeholder - Responsive HTML Layout)</p>
-  </section>
-
+    <div class="footer">
+      <p>Enterprise Solution Architecture</p>
+    </div>
+  </div>
 </body>
 </html>
