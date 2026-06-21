@@ -1,198 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Management System - Architecture Blueprint</title>
-  <style>
-    body {
-      font-family: Inter, Segoe UI, Arial, sans-serif;
-      background-color: #F8FAFC;
-      color: #0F172A;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      width: 90%;
-      margin: 20px auto;
-      background-color: #FFFFFF;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(15,23,42,0.08);
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #2563EB;
-    }
-
-    h2 {
-      color: #0F172A;
-      margin-top: 20px;
-    }
-
-    .card {
-      background-color: #FFFFFF;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(15,23,42,0.05);
-      padding: 15px;
-      margin-bottom: 15px;
-      border: 1px solid #E2E8F0;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .kpi-card {
-      background-color: #FFFFFF;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(15,23,42,0.05);
-      padding: 15px;
-      text-align: center;
-      border: 1px solid #E2E8F0;
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 30px;
-      padding: 10px;
-      background-color: #F8FAFC;
-      border-top: 1px solid #E2E8F0;
-    }
-
-    .hero-banner {
-      background: linear-gradient(to right, #2563EB, #60A5FA);
-      color: white;
-      padding: 20px;
-      text-align: center;
-      border-radius: 16px;
-    }
-
-    .layer {
-      background-color: #FFFFFF;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(15,23,42,0.05);
-      padding: 15px;
-      margin-bottom: 15px;
-      border: 1px solid #E2E8F0;
-    }
-
-    .layer-header {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phoenix Commerce Platform - Architecture Blueprint</title>
+<style>
+body {
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+.hero {
+  background: linear-gradient(to right, #2563EB, #60A5FA);
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+  text-align: center;
+}
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+  margin-bottom: 20px;
+}
+.kpi-card {
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.capability-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+}
+.architecture-overview {
+  margin-top: 30px;
+}
+.layer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  background-color: #F8FAFC;
+}
+.layer-title {
+  font-weight: bold;
+}
+.security-card, .monitoring-card {
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.handoff-section {
+  margin-top: 30px;
+}
+.handoff-list {
+  list-style: none;
+  padding: 0;
+}
+.handoff-list li {
+  margin-bottom: 10px;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #E2E8F0;
+}
+</style>
 </head>
 <body>
-  <div class="hero-banner">
-    <h1>Login Management System</h1>
+<div class="container">
+  <div class="hero">
+    <h1>Phoenix Commerce Platform</h1>
     <p>Architecture Pattern: Microservices</p>
     <p>Architecture Classification: Enterprise Solution</p>
-    <p>Provides secure and centralized user authentication and authorization.</p>
+    <p>The Phoenix Commerce Platform is a next-generation e-commerce solution designed to enhance customer engagement, streamline operations, and drive revenue growth.</p>
   </div>
 
-  <div class="container">
-    <h2>Leadership View</h2>
-    <div class="grid">
-      <div class="kpi-card">
-        <h3>Business Capabilities</h3>
-        <p>10+</p>
-        <p>Supports core business functions.</p>
-      </div>
-      <div class="kpi-card">
-        <h3>Core Modules</h3>
-        <p>5</p>
-        <p>Authentication, Authorization, User Management, Session Management, Audit Logging.</p>
-      </div>
-      <div class="kpi-card">
-        <h3>APIs</h3>
-        <p>6</p>
-        <p>Provides secure access to login functionality.</p>
-      </div>
-      <div class="kpi-card">
-        <h3>Integrations</h3>
-        <p>4+</p>
-        <p>Integrates with external authentication providers.</p>
-      </div>
-    </div>
+  <div class="leadership-view">
+    <div class="kpi-card"><strong>Business Capabilities:</strong> 12</div>
+    <div class="kpi-card"><strong>Core Modules:</strong> 10</div>
+    <div class="kpi-card"><strong>APIs:</strong> 8</div>
+    <div class="kpi-card"><strong>Integrations:</strong> 5</div>
+  </div>
 
+  <div class="business-value">
     <h2>Business Value</h2>
     <ul>
-      <li>Improved security posture</li>
-      <li>Streamlined user access</li>
-      <li>Reduced administrative overhead</li>
-      <li>Enhanced compliance</li>
+      <li>Increased customer engagement and loyalty</li>
+      <li>Improved operational efficiency and reduced costs</li>
+      <li>Enhanced scalability to support future growth</li>
+      <li>Strategic advantage through innovative features</li>
     </ul>
+  </div>
 
+  <div class="stakeholders">
+    <h2>Stakeholders</h2>
+    <p>Customers, Sales Representatives, Marketing Team, Administrators, Payment Gateway</p>
+  </div>
+
+  <div class="functional-requirements">
+    <h2>Functional Requirements</h2>
+    <ul>
+      <li>Product Catalog Management</li>
+      <li>Shopping Cart and Checkout</li>
+      <li>Order Management</li>
+      <li>Customer Account Management</li>
+    </ul>
+  </div>
+
+  <div class="technology-stack">
     <h2>Technology Stack</h2>
-    <div class="grid">
-      <div class="card">Frontend: React</div>
-      <div class="card">Backend: Node.js with Express.js</div>
-      <div class="card">Database: PostgreSQL</div>
-      <div class="card">Cloud: AWS</div>
-      <div class="card">Integration: OAuth 2.0, SAML</div>
-      <div class="card">Security: JWT, bcrypt, AWS WAF</div>
-    </div>
+    <div class="card"><strong>Frontend:</strong> React.js</div>
+    <div class="card"><strong>Backend:</strong> Node.js with Express.js</div>
+    <div class="card"><strong>Database:</strong> PostgreSQL</div>
+    <div class="card"><strong>Cloud:</strong> AWS</div>
+    <div class="card"><strong>Integration:</strong> REST APIs, Kafka</div>
+    <div class="card"><strong>Security:</strong> OAuth 2.0, JWT</div>
+  </div>
 
+  <div class="architecture-overview">
     <h2>Architecture Overview</h2>
-    <p>The Login Management System utilizes a microservices architecture to provide a scalable and resilient authentication and authorization solution. Each service is independently deployable and scalable, allowing for flexibility and rapid iteration. Security is a primary concern, with encryption, RBAC, and comprehensive audit logging implemented throughout the system.</p>
+    <p>The Phoenix Commerce Platform utilizes a microservices architecture to promote modularity, scalability, and resilience. Each business capability is implemented as an independent service, communicating via REST APIs and message queues. This approach allows for independent deployment and scaling of services, enabling rapid innovation and adaptation to changing business needs. Security is a top priority, with robust authentication, authorization, and data protection mechanisms in place.</p>
+  </div>
 
+  <div class="core-modules">
     <h2>Core Modules</h2>
-    <div class="grid">
-      <div class="card">Authentication Service</div>
-      <div class="card">Authorization Service</div>
-      <div class="card">User Management Service</div>
-      <div class="card">Session Management Service</div>
-      <div class="card">Audit Logging Service</div>
-    </div>
+    <div class="card">Product Catalog Service</div>
+    <div class="card">Order Management Service</div>
+    <div class="card">Customer Profile Service</div>
+    <div class="card">Payment Processing Service</div>
+    <div class="card">Inventory Service</div>
+    <div class="card">Shipping Service</div>
+    <div class="card">Recommendation Service</div>
+    <div class="card">Search Service</div>
+    <div class="card">Promotion Service</div>
+    <div class="card">Content Management Service</div>
+  </div>
 
+  <div class="domain-model">
     <h2>Domain Model</h2>
-    <div class="grid">
-      <div class="card">User</div>
-      <div class="card">Role</div>
-      <div class="card">Permission</div>
-      <div class="card">Session</div>
-      <div class="card">AuditLog</div>
-    </div>
+    <span class="badge">Product</span><span class="badge">Customer</span><span class="badge">Order</span><span class="badge">Payment</span><span class="badge">Inventory</span><span class="badge">ShippingAddress</span><span class="badge">Promotion</span><span class="badge">Review</span><span class="badge">CartItem</span><span class="badge">Coupon</span>
+  </div>
 
+  <div class="api-landscape">
     <h2>API Landscape</h2>
     <table>
       <tr><th>API Name</th><th>Purpose</th><th>Consumer</th></tr>
-      <tr><td>/login</td><td>User Login</td><td>Web Portal, Mobile App</td></tr>
-      <tr><td>/register</td><td>User Registration</td><td>Web Portal, Mobile App</td></tr>
-      <tr><td>/password/reset</td><td>Password Reset</td><td>Web Portal, Mobile App</td></tr>
+      <tr><td>Product API</td><td>Manage products</td><td>Frontend, Mobile App</td></tr>
+      <tr><td>Order API</td><td>Manage orders</td><td>Frontend, Mobile App</td></tr>
+      <tr><td>Customer API</td><td>Manage customers</td><td>Frontend, Mobile App</td></tr>
     </table>
+  </div>
 
+  <div class="integrations">
     <h2>Integrations</h2>
-    <div class="grid">
-      <div class="card">AWS Cognito</div>
-      <div class="card">Google OAuth</div>
-      <div class="card">Microsoft Active Directory</div>
-    </div>
+    <div class="card">Stripe (Payment Gateway)</div>
+    <div class="card">UPS, FedEx (Shipping Providers)</div>
+    <div class="card">Salesforce (CRM)</div>
+    <div class="card">Marketo (Marketing Automation)</div>
+    <div class="card">Google Analytics (Analytics)</div>
+  </div>
 
+  <div class="security-compliance">
     <h2>Security & Compliance</h2>
-    <div class="grid">
-      <div class="card">Authentication: OAuth 2.0, SAML, Password-based</div>
-      <div class="card">Authorization: Role-Based Access Control (RBAC)</div>
-      <div class="card">Data Protection: Encryption at rest and in transit (TLS)</div>
-      <div class="card">Audit Logging: Comprehensive audit logging of all events</div>
-    </div>
+    <div class="card"><strong>Authentication:</strong> OAuth 2.0 with JWT</div>
+    <div class="card"><strong>Authorization:</strong> Role-Based Access Control (RBAC)</div>
+    <div class="card"><strong>Data Protection:</strong> Encryption at rest and in transit (TLS)</div>
+    <div class="card"><strong>Audit Logging:</strong> Comprehensive audit trails</div>
+  </div>
 
-    <h2>Handoffs</h2>
-    <h3>Developer Handoff</h3>
-    <ul><li>API documentation (Swagger/OpenAPI)</li><li>Code repository access</li></ul>
-    <h3>QA Handoff</h3>
-    <ul><li>Test cases</li><li>Performance test scripts</li></ul>
-    <h3>Deployment Handoff</h3>
-    <ul><li>IaC templates (Terraform)</li></ul>
+  <div class="handoff-section">
+    <h2>Developer Handoff</h2>
+    <ul>
+      <li>Detailed API documentation (Swagger/OpenAPI)</li>
+      <li>Code repositories with clear branching strategy</li>
+    </ul>
+    <h2>QA Handoff</h2>
+    <ul>
+      <li>Test plans and test cases</li>
+      <li>Performance testing scripts</li>
+    </ul>
+    <h2>Deployment Handoff</h2>
+    <ul>
+      <li>Infrastructure as Code (IaC) templates (Terraform)</li>
+      <li>Deployment scripts and configuration management</li>
+    </ul>
   </div>
 
   <div class="footer">
-    &copy; 2024 Architecture Blueprint
+    <p>&copy; 2024 Phoenix Commerce Platform - Architecture Blueprint</p>
   </div>
+</div>
 </body>
 </html>
