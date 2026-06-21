@@ -1,158 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hospitable Management System - Architecture Blueprint</title>
-<style>
-body {
- font-family: Inter, Segoe UI, Arial, sans-serif;
- background-color: #F8FAFC;
- color: #0F172A;
- margin: 0;
-}
-.container {
- max-width: 1200px;
- margin: 20px auto;
- padding: 20px;
- background-color: #FFFFFF;
- border-radius: 16px;
- box-shadow: 0 8px 24px rgba(15,23,42,0.08);
-}
-h1 {
- color: #2563EB;
- text-align: center;
-}
-h2 {
- color: #0F172A;
- margin-top: 30px;
-}
-.card {
- background-color: #FFFFFF;
- border-radius: 16px;
- box-shadow: 0 4px 8px rgba(15,23,42,0.08);
- padding: 20px;
- margin-bottom: 20px;
- border: 1px solid #E2E8F0;
-}
-.kpi-card {
- border: 1px solid #E2E8F0;
- padding: 15px;
- border-radius: 8px;
- text-align: center;
-}
-.technology-card {
- border: 1px solid #E2E8F0;
- padding: 15px;
- border-radius: 8px;
- text-align: center;
- margin: 10px;
- display: inline-block;
- width: 200px;
-}
-.capability-grid {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
- gap: 20px;
-}
-.capability-card {
- border: 1px solid #E2E8F0;
- padding: 15px;
- border-radius: 8px;
- text-align: center;
-}
-.architecture-diagram {
- margin-top: 40px;
- text-align: center;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phoenix Commerce Platform - Architecture Blueprint</title>
+  <style>
+    body {
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+      background-color: #F8FAFC;
+      color: #0F172A;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-banner {
+      background: linear-gradient(to right, #2563EB, #60A5FA); /* Primary Blue Gradient */
+      color: #FFFFFF;
+      padding: 2em;
+      text-align: center;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+    }
+
+    .leadership-view {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5em;
+      padding: 1.5em;
+    }
+
+    .kpi-card {
+      background-color: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 16px;
+      padding: 1em;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+    }
+
+    .business-summary {
+      padding: 1.5em;
+    }
+
+    .technology-stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1em;
+      padding: 1.5em;
+    }
+
+    .tech-card {
+      background-color: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 16px;
+      padding: 0.75em;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+    }
+
+    .architecture-overview {
+      padding: 1.5em;
+    }
+
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1em;
+      padding: 1.5em;
+    }
+
+    .module-card {
+      background-color: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 16px;
+      padding: 0.75em;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+    }
+
+    .domain-model {
+      padding: 1.5em;
+    }
+
+    .api-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5em;
+    }
+
+    .api-table th, .api-table td {
+      border: 1px solid #E2E8F0;
+      padding: 0.5em;
+      text-align: left;
+    }
+
+    .integration-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1em;
+      padding: 1.5em;
+    }
+
+    .integration-card {
+      background-color: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 16px;
+      padding: 0.75em;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+    }
+
+    .security-compliance {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1em;
+      padding: 1.5em;
+    }
+
+    .security-card {
+      background-color: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 16px;
+      padding: 0.75em;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+    }
+
+    .handoff-section {
+      padding: 1.5em;
+    }
+
+    .architecture-diagram {
+      padding: 1.5em;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #F8FAFC;
+      border-top: 1px solid #E2E8F0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .leadership-view {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-<h1>Hospitable Management System</h1>
-<h2>Architecture Blueprint</h2>
-<div class="hero-banner">
-<p><b>Project:</b> Hospitable Management System</p>
-<p><b>Pattern:</b> Microservices</p>
-<p><b>Classification:</b> Enterprise Solution</p>
-<p><b>Summary:</b> A comprehensive solution for hotels and hospitality businesses, streamlining operations and enhancing guest experiences.</p>
-</div>
 
-<div class="leadership-view">
- <div class="kpi-card"><b>Business Capabilities:</b> 8</div>
- <div class="kpi-card"><b>Core Modules:</b> 8</div>
- <div class="kpi-card"><b>APIs:</b> 4</div>
- <div class="kpi-card"><b>Integrations:</b> 5</div>
-</div>
+  <header class="hero-banner">
+    <h1>Phoenix Commerce Platform</h1>
+    <p>Architecture Pattern: Microservices</p>
+    <p>Architecture Classification: Enterprise Solution</p>
+    <p>A scalable and resilient e-commerce platform built for the future.</p>
+  </header>
 
-<h2>Business Value</h2>
-<ul>
- <li>Increased operational efficiency through automation.</li>
- <li>Improved guest satisfaction and loyalty.</li>
- <li>Reduced operational costs.</li>
- <li>Enhanced revenue generation.</li>
-</ul>
+  <section class="leadership-view">
+    <div class="kpi-card">
+      <h3>Business Capabilities</h3>
+      <p>12+</p>
+      <p>Core business functions supported.</p>
+    </div>
+    <div class="kpi-card">
+      <h3>Core Modules</h3>
+      <p>10</p>
+      <p>Independent microservices driving functionality.</p>
+    </div>
+    <div class="kpi-card">
+      <h3>APIs</h3>
+      <p>8</p>
+      <p>Public APIs for integration and extensibility.</p>
+    </div>
+    <div class="kpi-card">
+      <h3>Integrations</h3>
+      <p>5+</p>
+      <p>Key integrations with external systems.</p>
+    </div>
+  </section>
 
-<h2>Technology Stack</h2>
-<div class="technology-card"><b>Frontend:</b> React</div>
-<div class="technology-card"><b>Backend:</b> Node.js</div>
-<div class="technology-card"><b>Database:</b> PostgreSQL</div>
-<div class="technology-card"><b>Cloud:</b> AWS</div>
-<div class="technology-card"><b>Integration:</b> REST APIs</div>
-<div class="technology-card"><b>Security:</b> OAuth 2.0</div>
+  <section class="business-summary">
+    <h2>Business Value</h2>
+    <ul>
+      <li>Increased revenue through enhanced customer experience.</li>
+      <li>Reduced operational costs through automation and efficiency.</li>
+      <li>Improved scalability to handle future growth.</li>
+      <li>Enhanced agility to adapt to changing market demands.</li>
+    </ul>
+  </section>
 
-<h2>Architecture Overview</h2>
-<p>The HMS utilizes a microservices architecture to ensure scalability, resilience, and independent deployability. Each business function is encapsulated within a separate service, communicating via REST APIs. This approach allows for flexible development, easy maintenance, and independent scaling of individual components. Security is a primary concern, with robust authentication and authorization mechanisms implemented throughout the system.</p>
+  <section>
+    <h2>Stakeholders</h2>
+    <p>Customers, Sales Representatives, Marketing Managers, System Administrators, Inventory Managers</p>
+  </section>
 
-<h2>Core Modules</h2>
-<div class="capability-grid">
- <div class="capability-card">Booking Module</div>
- <div class="capability-card">Guest Management</div>
- <div class="capability-card">Room Management</div>
- <div class="capability-card">Billing Module</div>
- <div class="capability-card">Reporting Module</div>
- <div class="capability-card">Housekeeping Module</div>
-</div>
+  <section>
+    <h2>Functional Requirements</h2>
+    <p>Product Catalog Management, Shopping Cart and Checkout, Order Management, Customer Account Management, Payment Processing, Inventory Management, Promotions and Discounts, Reporting and Analytics</p>
+  </section>
 
-<h2>Domain Model</h2>
-<p>Guests, Reservations, Rooms, Bookings, Payments, Invoices, Hotels, Users, Loyalty Programs, Housekeeping Tasks</p>
+  <section class="technology-stack">
+    <div class="tech-card">Frontend: React.js</div>
+    <div class="tech-card">Backend: Node.js with Express.js</div>
+    <div class="tech-card">Database: PostgreSQL</div>
+    <div class="tech-card">Cloud: AWS</div>
+    <div class="tech-card">Integration: REST APIs, RabbitMQ</div>
+    <div class="tech-card">Security: OAuth 2.0, JWT, AWS WAF</div>
+  </section>
 
-<h2>API Landscape</h2>
-<table>
- <tr><th>API Name</th><th>Purpose</th><th>Consumer</th></tr>
- <tr><td>Booking API</td><td>Manage bookings</td><td>Frontend, External Partners</td></tr>
- <tr><td>Guest API</td><td>Manage guest information</td><td>Frontend, Internal Systems</td></tr>
- <tr><td>Room API</td><td>Manage room availability</td><td>Frontend, Booking Agents</td></tr>
- <tr><td>Payment API</td><td>Process payments</td><td>Frontend, Payment Gateway</td></tr>
-</table>
+  <section class="architecture-overview">
+    <h2>Architecture Overview</h2>
+    <p>The Phoenix Commerce Platform utilizes a microservices architecture to achieve scalability, resilience, and agility. Each microservice is independently deployable and scalable, allowing for rapid iteration and continuous delivery. The platform leverages REST APIs for communication between services and message queues for asynchronous processing. Security is a top priority, with robust authentication, authorization, and data protection mechanisms in place.</p>
+  </section>
 
-<h2>Integrations</h2>
-<div class="card">Payment Gateway (Stripe, PayPal)</div>
-<div class="card">Email Service (SendGrid, Mailgun)</div>
-<div class="card">SMS Service (Twilio)</div>
-<div class="card">Channel Manager (Expedia, Booking.com)</div>
-<div class="card">Accounting System (QuickBooks, Xero)</div>
+  <section class="core-modules">
+    <h2>Core Modules</h2>
+    <div class="module-grid">
+      <div class="module-card">Product Catalog Service</div>
+      <div class="module-card">Order Management Service</div>
+      <div class="module-card">Customer Profile Service</div>
+      <div class="module-card">Payment Processing Service</div>
+      <div class="module-card">Inventory Service</div>
+      <div class="module-card">Shipping Service</div>
+      <div class="module-card">Recommendation Service</div>
+      <div class="module-card">Search Service</div>
+      <div class="module-card">Marketing Service</div>
+      <div class="module-card">Reporting Service</div>
+    </div>
+  </section>
 
-<h2>Security & Compliance</h2>
-<div class="card"><b>Authentication:</b> OAuth 2.0</div>
-<div class="card"><b>Authorization:</b> RBAC</div>
-<div class="card"><b>Data Protection:</b> AES-256 Encryption</div>
-<div class="card"><b>Audit Logging:</b> Comprehensive Audit Trails</div>
+  <section class="domain-model">
+    <h2>Domain Model</h2>
+    <p>Product, Category, Customer, Order, Payment, InventoryItem, Promotion, Review, CartItem, Coupon, Wishlist, User, Role</p>
+  </section>
 
-<h2>Handoffs</h2>
-<h3>Developer Handoff</h3>
-<ul><li>Detailed API documentation</li><li>CI/CD pipelines</li></ul>
-<h3>QA Handoff</h3>
-<ul><li>Test cases</li><li>Performance testing</li></ul>
-<h3>Deployment Handoff</h3>
-<ul><li>IaC scripts</li><li>Deployment checklists</li></ul>
+  <section class="api-landscape">
+    <h2>API Landscape</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>API Name</th>
+          <th>Purpose</th>
+          <th>Consumer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Product API</td>
+          <td>Manage product catalog</td>
+          <td>Frontend, Mobile App</td>
+        </tr>
+        <tr>
+          <td>Order API</td>
+          <td>Process orders</td>
+          <td>Frontend, Payment Service</td>
+        </tr>
+        <tr>
+          <td>Customer API</td>
+          <td>Manage customer accounts</td>
+          <td>Frontend, Marketing Service</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-<div class="architecture-diagram">
- <h1>Architecture Diagram</h1>
- <p><i>(Simplified Layered Representation - SVG not generated due to constraints)</i></p>
- <p>Users & Channels ↓ Experience Layer ↓ API Layer ↓ Services Layer ↓ Domain Layer ↓ Persistence Layer</p>
-</div>
+  <section class="integrations">
+    <h2>Integrations</h2>
+    <div class="integration-grid">
+      <div class="integration-card">Stripe (Payment Gateway)</div>
+      <div class="integration-card">UPS, FedEx (Shipping Providers)</div>
+      <div class="integration-card">Salesforce (CRM)</div>
+      <div class="integration-card">Mailchimp (Marketing Automation)</div>
+      <div class="integration-card">Google Analytics (Analytics)</div>
+    </div>
+  </section>
 
-</div>
+  <section class="security-compliance">
+    <h2>Security & Compliance</h2>
+    <div class="security-card">Authentication: OAuth 2.0 with JWT</div>
+    <div class="security-card">Authorization: Role-Based Access Control (RBAC)</div>
+    <div class="security-card">Data Protection: Encryption at rest and in transit</div>
+    <div class="security-card">Audit Logging: Comprehensive audit trails</div>
+  </section>
+
+  <section class="handoff-section">
+    <h2>Developer Handoff</h2>
+    <ul>
+      <li>Detailed API documentation (Swagger/OpenAPI)</li>
+      <li>Code repositories with clear branching strategy</li>
+      <li>Automated build and deployment pipelines</li>
+      <li>Unit and integration tests</li>
+      <li>Code style guidelines</li>
+    </ul>
+  </section>
+
+  <section class="handoff-section">
+    <h2>QA Handoff</h2>
+    <ul>
+      <li>Test cases covering all functional and non-functional requirements</li>
+      <li>Performance test scripts</li>
+      <li>Security vulnerability assessment reports</li>
+      <li>User acceptance testing (UAT) plan</li>
+    </ul>
+  </section>
+
+  <section class="handoff-section">
+    <h2>Deployment Handoff</h2>
+    <ul>
+      <li>Infrastructure as Code (IaC) templates (Terraform)</li>
+      <li>Deployment scripts</li>
+      <li>Monitoring and alerting configuration</li>
+      <li>Rollback procedures</li>
+    </ul>
+  </section>
+
+  <section class="footer">
+    <p>&copy; 2024 Phoenix Commerce Platform</p>
+  </section>
+
 </body>
 </html>
