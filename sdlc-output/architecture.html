@@ -1,196 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login Management System - Architecture Blueprint</title>
-<style>
-body {
-  font-family: Inter, Segoe UI, Arial, sans-serif;
-  background-color: #F8FAFC;
-  color: #0F172A;
-}
-.container {
-  width: 90%;
-  margin: 20px auto;
-}
-.hero {
-  background: linear-gradient(to right, #2563EB, #60A5FA);
-  color: white;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(15,23,42,0.08);
-  text-align: center;
-}
-.card {
-  background-color: #FFFFFF;
-  border: 1px solid #E2E8F0;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 8px 24px rgba(15,23,42,0.08);
-  margin-bottom: 20px;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-.kpi-card {
-  background-color: #FFFFFF;
-  border: 1px solid #E2E8F0;
-  border-radius: 16px;
-  padding: 15px;
-  box-shadow: 0 8px 24px rgba(15,23,42,0.08);
-  text-align: center;
-}
-.muted {
-  color: #64748B;
-}
-.security-card {
-  background-color: #10B981;
-  color: white;
-}
-.monitoring-card {
-  background-color: #8B5CF6;
-  color: white;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Management System - Architecture Blueprint</title>
+  <style>
+    body {
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+      background-color: #F8FAFC;
+      color: #0F172A;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      background-color: #FFFFFF;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(15,23,42,0.08);
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2563EB;
+    }
+
+    h2 {
+      color: #0F172A;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(15,23,42,0.05);
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #E2E8F0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .kpi-card {
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(15,23,42,0.05);
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #E2E8F0;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #F8FAFC;
+      border-top: 1px solid #E2E8F0;
+    }
+
+    .hero-banner {
+      background: linear-gradient(to right, #2563EB, #60A5FA);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 16px;
+    }
+
+    .layer {
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(15,23,42,0.05);
+      padding: 15px;
+      margin-bottom: 15px;
+      border: 1px solid #E2E8F0;
+    }
+
+    .layer-header {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-  <div class="hero">
+  <div class="hero-banner">
     <h1>Login Management System</h1>
     <p>Architecture Pattern: Microservices</p>
-    <p>Architecture Classification: Enterprise</p>
+    <p>Architecture Classification: Enterprise Solution</p>
     <p>Provides secure and centralized user authentication and authorization.</p>
   </div>
 
-  <div class="grid">
-    <div class="card kpi-card">
-      <h3>Business Capabilities</h3>
-      <p>10+</p>
-      <p class="muted">Supports various business functions.</p>
+  <div class="container">
+    <h2>Leadership View</h2>
+    <div class="grid">
+      <div class="kpi-card">
+        <h3>Business Capabilities</h3>
+        <p>10+</p>
+        <p>Supports core business functions.</p>
+      </div>
+      <div class="kpi-card">
+        <h3>Core Modules</h3>
+        <p>5</p>
+        <p>Authentication, Authorization, User Management, Session Management, Audit Logging.</p>
+      </div>
+      <div class="kpi-card">
+        <h3>APIs</h3>
+        <p>6</p>
+        <p>Provides secure access to login functionality.</p>
+      </div>
+      <div class="kpi-card">
+        <h3>Integrations</h3>
+        <p>4+</p>
+        <p>Integrates with external authentication providers.</p>
+      </div>
     </div>
-    <div class="card kpi-card">
-      <h3>Core Modules</h3>
-      <p>5</p>
-      <p class="muted">Authentication, Authorization, User Management, etc.</p>
-    </div>
-    <div class="card kpi-card">
-      <h3>APIs</h3>
-      <p>4</p>
-      <p class="muted">/login, /register, /password/reset, /user/profile</p>
-    </div>
-    <div class="card kpi-card">
-      <h3>Integrations</h3>
-      <p>3+</p>
-      <p class="muted">AWS Cognito, Google Authentication, Active Directory</p>
-    </div>
-  </div>
 
-  <div class="card">
     <h2>Business Value</h2>
     <ul>
-      <li>Enhanced Security: Protects sensitive data and resources.</li>
-      <li>Simplified User Management: Centralized user administration.</li>
-      <li>Improved User Experience: Seamless login and password management.</li>
-      <li>Scalability: Supports growing user base and application demands.</li>
+      <li>Improved security posture</li>
+      <li>Streamlined user access</li>
+      <li>Reduced administrative overhead</li>
+      <li>Enhanced compliance</li>
     </ul>
-  </div>
 
-  <div class="card">
     <h2>Technology Stack</h2>
     <div class="grid">
       <div class="card">Frontend: React</div>
-      <div class="card">Backend: Node.js/Express.js</div>
+      <div class="card">Backend: Node.js with Express.js</div>
       <div class="card">Database: PostgreSQL</div>
       <div class="card">Cloud: AWS</div>
       <div class="card">Integration: OAuth 2.0, SAML</div>
-      <div class="card">Security: JWT, bcrypt</div>
+      <div class="card">Security: JWT, bcrypt, AWS WAF</div>
     </div>
-  </div>
 
-  <div class="card">
     <h2>Architecture Overview</h2>
-    <p>The Login Management System utilizes a microservices architecture for scalability and maintainability. Each service is responsible for a specific function (authentication, authorization, etc.).  API Gateway manages traffic and provides a unified entry point. Security is enforced through JWT authentication and RBAC. The system is designed for high availability and resilience, leveraging AWS services for infrastructure and data storage.</p>
-  </div>
+    <p>The Login Management System utilizes a microservices architecture to provide a scalable and resilient authentication and authorization solution. Each service is independently deployable and scalable, allowing for flexibility and rapid iteration. Security is a primary concern, with encryption, RBAC, and comprehensive audit logging implemented throughout the system.</p>
 
-  <div class="card">
     <h2>Core Modules</h2>
     <div class="grid">
       <div class="card">Authentication Service</div>
       <div class="card">Authorization Service</div>
       <div class="card">User Management Service</div>
-      <div class="card">Password Reset Service</div>
-      <div class="card">MFA Service</div>
+      <div class="card">Session Management Service</div>
+      <div class="card">Audit Logging Service</div>
     </div>
-  </div>
 
-  <div class="card">
     <h2>Domain Model</h2>
-    <div>User, Role, Permission, AuthenticationAttempt, MFAConfiguration</div>
-  </div>
+    <div class="grid">
+      <div class="card">User</div>
+      <div class="card">Role</div>
+      <div class="card">Permission</div>
+      <div class="card">Session</div>
+      <div class="card">AuditLog</div>
+    </div>
 
-  <div class="card">
     <h2>API Landscape</h2>
     <table>
       <tr><th>API Name</th><th>Purpose</th><th>Consumer</th></tr>
-      <tr><td>/login</td><td>User Authentication</td><td>Web Portal, Mobile App</td></tr>
+      <tr><td>/login</td><td>User Login</td><td>Web Portal, Mobile App</td></tr>
       <tr><td>/register</td><td>User Registration</td><td>Web Portal, Mobile App</td></tr>
       <tr><td>/password/reset</td><td>Password Reset</td><td>Web Portal, Mobile App</td></tr>
-      <tr><td>/user/profile</td><td>User Profile Management</td><td>Web Portal, Mobile App</td></tr>
     </table>
-  </div>
 
-  <div class="card">
     <h2>Integrations</h2>
     <div class="grid">
       <div class="card">AWS Cognito</div>
-      <div class="card">Google Authentication</div>
+      <div class="card">Google OAuth</div>
       <div class="card">Microsoft Active Directory</div>
     </div>
-  </div>
 
-  <div class="card security-card">
     <h2>Security & Compliance</h2>
     <div class="grid">
-      <div class="card">Authentication: OAuth 2.0, JWT</div>
-      <div class="card">Authorization: RBAC</div>
-      <div class="card">Data Protection: Encryption at rest & transit</div>
-      <div class="card">Audit Logging: Comprehensive audit trails</div>
+      <div class="card">Authentication: OAuth 2.0, SAML, Password-based</div>
+      <div class="card">Authorization: Role-Based Access Control (RBAC)</div>
+      <div class="card">Data Protection: Encryption at rest and in transit (TLS)</div>
+      <div class="card">Audit Logging: Comprehensive audit logging of all events</div>
     </div>
+
+    <h2>Handoffs</h2>
+    <h3>Developer Handoff</h3>
+    <ul><li>API documentation (Swagger/OpenAPI)</li><li>Code repository access</li></ul>
+    <h3>QA Handoff</h3>
+    <ul><li>Test cases</li><li>Performance test scripts</li></ul>
+    <h3>Deployment Handoff</h3>
+    <ul><li>IaC templates (Terraform)</li></ul>
   </div>
 
-  <div class="card">
-    <h2>Developer Handoff</h2>
-    <ul>
-      <li>API Documentation (Swagger)</li>
-      <li>Code Repository</li>
-      <li>Automated Pipelines</li>
-      <li>Unit & Integration Tests</li>
-    </ul>
+  <div class="footer">
+    &copy; 2024 Architecture Blueprint
   </div>
-
-  <div class="card">
-    <h2>QA Handoff</h2>
-    <ul>
-      <li>Test Cases</li>
-      <li>Performance Testing</li>
-      <li>Security Assessment</li>
-      <li>UAT Plan</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Deployment Handoff</h2>
-    <ul>
-      <li>IaC Templates (Terraform)</li>
-      <li>Deployment Scripts</li>
-      <li>Monitoring Configuration</li>
-      <li>Runbooks</li>
-    </ul>
-  </div>
-
-</div>
 </body>
 </html>
